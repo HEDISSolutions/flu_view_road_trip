@@ -1,0 +1,4509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_28136c971b82dad42fa75f4ef33c52af {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_28136c971b82dad42fa75f4ef33c52af" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_28136c971b82dad42fa75f4ef33c52af = L.map(
+                "map_28136c971b82dad42fa75f4ef33c52af",
+                {
+                    center: [34.0, -81.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4e0b97c510e3eb8983ae024f785b380f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4e0b97c510e3eb8983ae024f785b380f.addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+            var marker_6346376fa14178d71278206c417c21d7 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_7841757087d7d529dc6fd1efe50e1e5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54a97e84bf725fbf725169926bcb9cfe = $(`<div id="html_54a97e84bf725fbf725169926bcb9cfe" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_7841757087d7d529dc6fd1efe50e1e5a.setContent(html_54a97e84bf725fbf725169926bcb9cfe);
+            
+        
+
+        marker_6346376fa14178d71278206c417c21d7.bindPopup(popup_7841757087d7d529dc6fd1efe50e1e5a)
+        ;
+
+        
+    
+    
+            marker_6346376fa14178d71278206c417c21d7.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bee10784a0450e52ea7831175f4a2e4 = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_de65844124c44e017fcdda3d8229b3af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bf8964f662df8e0fe6c8c8f25908d39 = $(`<div id="html_8bf8964f662df8e0fe6c8c8f25908d39" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_de65844124c44e017fcdda3d8229b3af.setContent(html_8bf8964f662df8e0fe6c8c8f25908d39);
+            
+        
+
+        marker_2bee10784a0450e52ea7831175f4a2e4.bindPopup(popup_de65844124c44e017fcdda3d8229b3af)
+        ;
+
+        
+    
+    
+            marker_2bee10784a0450e52ea7831175f4a2e4.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fff7a5151e06a48ee07c151ff296af4 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_8d16bcd55ba8054901937160ad6d9cab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_182fd7d4b77cee55c2f8ced2728b5c80 = $(`<div id="html_182fd7d4b77cee55c2f8ced2728b5c80" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_8d16bcd55ba8054901937160ad6d9cab.setContent(html_182fd7d4b77cee55c2f8ced2728b5c80);
+            
+        
+
+        marker_3fff7a5151e06a48ee07c151ff296af4.bindPopup(popup_8d16bcd55ba8054901937160ad6d9cab)
+        ;
+
+        
+    
+    
+            marker_3fff7a5151e06a48ee07c151ff296af4.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bb46c36ad00f52be766607ab5657bd1 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_0a00df95c27e1143f75b53ca6a2ea0ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7da60977d46f1d618adadeee9935e529 = $(`<div id="html_7da60977d46f1d618adadeee9935e529" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_0a00df95c27e1143f75b53ca6a2ea0ed.setContent(html_7da60977d46f1d618adadeee9935e529);
+            
+        
+
+        marker_0bb46c36ad00f52be766607ab5657bd1.bindPopup(popup_0a00df95c27e1143f75b53ca6a2ea0ed)
+        ;
+
+        
+    
+    
+            marker_0bb46c36ad00f52be766607ab5657bd1.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ca4df85c1bc2c8358fff32ce1edae22 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_2d1f8f5d8feff8694856bdaa1092df7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8151474d3d29b5a4891730a353b168f2 = $(`<div id="html_8151474d3d29b5a4891730a353b168f2" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_2d1f8f5d8feff8694856bdaa1092df7c.setContent(html_8151474d3d29b5a4891730a353b168f2);
+            
+        
+
+        marker_9ca4df85c1bc2c8358fff32ce1edae22.bindPopup(popup_2d1f8f5d8feff8694856bdaa1092df7c)
+        ;
+
+        
+    
+    
+            marker_9ca4df85c1bc2c8358fff32ce1edae22.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62def1275846e0f4aaaec6c177e89ade = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_2dd3406ac348ac235cdae39a9b60767e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f937f399e0d6df55de6ed53badb5fc9e = $(`<div id="html_f937f399e0d6df55de6ed53badb5fc9e" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_2dd3406ac348ac235cdae39a9b60767e.setContent(html_f937f399e0d6df55de6ed53badb5fc9e);
+            
+        
+
+        marker_62def1275846e0f4aaaec6c177e89ade.bindPopup(popup_2dd3406ac348ac235cdae39a9b60767e)
+        ;
+
+        
+    
+    
+            marker_62def1275846e0f4aaaec6c177e89ade.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_afe4321bb1058e9c91199130a6d88f62 = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_b65bb98454fd8fb124752036c54ac997 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c4c61dd000e64008d81513d5ddf40f3 = $(`<div id="html_7c4c61dd000e64008d81513d5ddf40f3" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_b65bb98454fd8fb124752036c54ac997.setContent(html_7c4c61dd000e64008d81513d5ddf40f3);
+            
+        
+
+        marker_afe4321bb1058e9c91199130a6d88f62.bindPopup(popup_b65bb98454fd8fb124752036c54ac997)
+        ;
+
+        
+    
+    
+            marker_afe4321bb1058e9c91199130a6d88f62.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8747317d8e10f8b59ac7aa644edb009 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_70f69a59f1da52dfdf6a9d3d0f07fbd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa2a2e5902587123eee21745e2fa25dd = $(`<div id="html_aa2a2e5902587123eee21745e2fa25dd" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_70f69a59f1da52dfdf6a9d3d0f07fbd4.setContent(html_aa2a2e5902587123eee21745e2fa25dd);
+            
+        
+
+        marker_b8747317d8e10f8b59ac7aa644edb009.bindPopup(popup_70f69a59f1da52dfdf6a9d3d0f07fbd4)
+        ;
+
+        
+    
+    
+            marker_b8747317d8e10f8b59ac7aa644edb009.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73073e920ab5e975afeafbb265ffcbcc = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_a126a5480b037e541ce13db431ba6f4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_582e8f24de04d4d19d0929481adbaa7b = $(`<div id="html_582e8f24de04d4d19d0929481adbaa7b" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_a126a5480b037e541ce13db431ba6f4f.setContent(html_582e8f24de04d4d19d0929481adbaa7b);
+            
+        
+
+        marker_73073e920ab5e975afeafbb265ffcbcc.bindPopup(popup_a126a5480b037e541ce13db431ba6f4f)
+        ;
+
+        
+    
+    
+            marker_73073e920ab5e975afeafbb265ffcbcc.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f32af277a8b32759a793e87b0f890b12 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_090d7fa292e38196baefeefb3234cb10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_793a0f0480ee3d01cbd198a5cecfc024 = $(`<div id="html_793a0f0480ee3d01cbd198a5cecfc024" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_090d7fa292e38196baefeefb3234cb10.setContent(html_793a0f0480ee3d01cbd198a5cecfc024);
+            
+        
+
+        marker_f32af277a8b32759a793e87b0f890b12.bindPopup(popup_090d7fa292e38196baefeefb3234cb10)
+        ;
+
+        
+    
+    
+            marker_f32af277a8b32759a793e87b0f890b12.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efcb3b32c019c9bbeae15530bc1c1804 = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_6e32f2552cd76f3c2d11fba5e79c6a43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebba64dc248fb34b586ebec0a115e7b2 = $(`<div id="html_ebba64dc248fb34b586ebec0a115e7b2" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_6e32f2552cd76f3c2d11fba5e79c6a43.setContent(html_ebba64dc248fb34b586ebec0a115e7b2);
+            
+        
+
+        marker_efcb3b32c019c9bbeae15530bc1c1804.bindPopup(popup_6e32f2552cd76f3c2d11fba5e79c6a43)
+        ;
+
+        
+    
+    
+            marker_efcb3b32c019c9bbeae15530bc1c1804.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d739f6c66e9cc1071c8266599903b11 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_bc369bddc0a0ea389f2bf69bd391b439 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a69d8d734f10573daaccef93e9b1307 = $(`<div id="html_5a69d8d734f10573daaccef93e9b1307" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_bc369bddc0a0ea389f2bf69bd391b439.setContent(html_5a69d8d734f10573daaccef93e9b1307);
+            
+        
+
+        marker_6d739f6c66e9cc1071c8266599903b11.bindPopup(popup_bc369bddc0a0ea389f2bf69bd391b439)
+        ;
+
+        
+    
+    
+            marker_6d739f6c66e9cc1071c8266599903b11.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d39565ec7c1b85b1ec75f58f64fc1989 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_bc757453b896179121d8655a4aa8d405 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f72c67a65ca59877f2f253708487f560 = $(`<div id="html_f72c67a65ca59877f2f253708487f560" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_bc757453b896179121d8655a4aa8d405.setContent(html_f72c67a65ca59877f2f253708487f560);
+            
+        
+
+        marker_d39565ec7c1b85b1ec75f58f64fc1989.bindPopup(popup_bc757453b896179121d8655a4aa8d405)
+        ;
+
+        
+    
+    
+            marker_d39565ec7c1b85b1ec75f58f64fc1989.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d8593b4fd3dbb9af3859f62e88c3343 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_3aeecebe703a398c9cd0a21b45ad8807 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2c24c82211f3766b6e306e9eb72d85a = $(`<div id="html_b2c24c82211f3766b6e306e9eb72d85a" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_3aeecebe703a398c9cd0a21b45ad8807.setContent(html_b2c24c82211f3766b6e306e9eb72d85a);
+            
+        
+
+        marker_6d8593b4fd3dbb9af3859f62e88c3343.bindPopup(popup_3aeecebe703a398c9cd0a21b45ad8807)
+        ;
+
+        
+    
+    
+            marker_6d8593b4fd3dbb9af3859f62e88c3343.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62014faadc49d4f8195369290aa0f310 = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_b769446d14313e39717b26b672e8e70a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05e5ab8ee939d6831ddff9489467102b = $(`<div id="html_05e5ab8ee939d6831ddff9489467102b" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_b769446d14313e39717b26b672e8e70a.setContent(html_05e5ab8ee939d6831ddff9489467102b);
+            
+        
+
+        marker_62014faadc49d4f8195369290aa0f310.bindPopup(popup_b769446d14313e39717b26b672e8e70a)
+        ;
+
+        
+    
+    
+            marker_62014faadc49d4f8195369290aa0f310.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4bee401acffe2792ba0d24a7f69dc3c1 = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_05224beddf4eae7d7efa5a57eeb87953 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3026d161d91cafdf5be5fbef86033a0a = $(`<div id="html_3026d161d91cafdf5be5fbef86033a0a" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_05224beddf4eae7d7efa5a57eeb87953.setContent(html_3026d161d91cafdf5be5fbef86033a0a);
+            
+        
+
+        marker_4bee401acffe2792ba0d24a7f69dc3c1.bindPopup(popup_05224beddf4eae7d7efa5a57eeb87953)
+        ;
+
+        
+    
+    
+            marker_4bee401acffe2792ba0d24a7f69dc3c1.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42bb4853bef421795f331b161209ba70 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_0b1aa50435aee77e1c19cfb52a961ab8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02076d93635aeca4020351867e7593e2 = $(`<div id="html_02076d93635aeca4020351867e7593e2" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_0b1aa50435aee77e1c19cfb52a961ab8.setContent(html_02076d93635aeca4020351867e7593e2);
+            
+        
+
+        marker_42bb4853bef421795f331b161209ba70.bindPopup(popup_0b1aa50435aee77e1c19cfb52a961ab8)
+        ;
+
+        
+    
+    
+            marker_42bb4853bef421795f331b161209ba70.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_024ad0e936bb80ca4c9fc3c1367c17e5 = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_f2286cf32297995de6c1ac7246527afb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a09fcb827a2bcd18e73e4e098720d26a = $(`<div id="html_a09fcb827a2bcd18e73e4e098720d26a" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_f2286cf32297995de6c1ac7246527afb.setContent(html_a09fcb827a2bcd18e73e4e098720d26a);
+            
+        
+
+        marker_024ad0e936bb80ca4c9fc3c1367c17e5.bindPopup(popup_f2286cf32297995de6c1ac7246527afb)
+        ;
+
+        
+    
+    
+            marker_024ad0e936bb80ca4c9fc3c1367c17e5.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e9429621a13c6642e7d3c4e91afe0a8 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_06ed9c69eb1359964c3b139a2bf89762 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcdba6f70962c998f2493ab659d107e4 = $(`<div id="html_bcdba6f70962c998f2493ab659d107e4" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_06ed9c69eb1359964c3b139a2bf89762.setContent(html_bcdba6f70962c998f2493ab659d107e4);
+            
+        
+
+        marker_5e9429621a13c6642e7d3c4e91afe0a8.bindPopup(popup_06ed9c69eb1359964c3b139a2bf89762)
+        ;
+
+        
+    
+    
+            marker_5e9429621a13c6642e7d3c4e91afe0a8.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85eec6debf3f7453f270407d46004b50 = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_cc9e13333f9eacc81c85183b404835f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de9c9b6a0f4778c40a6dc6bfd911712b = $(`<div id="html_de9c9b6a0f4778c40a6dc6bfd911712b" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_cc9e13333f9eacc81c85183b404835f4.setContent(html_de9c9b6a0f4778c40a6dc6bfd911712b);
+            
+        
+
+        marker_85eec6debf3f7453f270407d46004b50.bindPopup(popup_cc9e13333f9eacc81c85183b404835f4)
+        ;
+
+        
+    
+    
+            marker_85eec6debf3f7453f270407d46004b50.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b36aee9fdf0313e6f67ae8906e7326a1 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_90bcc525ca6e254d6ff7776a3a4c581a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60e6936cfd9223e0878e701eac4e3108 = $(`<div id="html_60e6936cfd9223e0878e701eac4e3108" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_90bcc525ca6e254d6ff7776a3a4c581a.setContent(html_60e6936cfd9223e0878e701eac4e3108);
+            
+        
+
+        marker_b36aee9fdf0313e6f67ae8906e7326a1.bindPopup(popup_90bcc525ca6e254d6ff7776a3a4c581a)
+        ;
+
+        
+    
+    
+            marker_b36aee9fdf0313e6f67ae8906e7326a1.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c5a556e5941da2adca7147a40658ab0 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_4c30e00cc77c46272da6043c02435d9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac57099876c715b3e7a7bc8276a67abf = $(`<div id="html_ac57099876c715b3e7a7bc8276a67abf" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_4c30e00cc77c46272da6043c02435d9d.setContent(html_ac57099876c715b3e7a7bc8276a67abf);
+            
+        
+
+        marker_1c5a556e5941da2adca7147a40658ab0.bindPopup(popup_4c30e00cc77c46272da6043c02435d9d)
+        ;
+
+        
+    
+    
+            marker_1c5a556e5941da2adca7147a40658ab0.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb7e8e13b7f25dd14eaabab9be7d3f84 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_31dc0a35aae0cffae453066148e392ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5aaf09d261129aa12aad6d67307f8f88 = $(`<div id="html_5aaf09d261129aa12aad6d67307f8f88" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_31dc0a35aae0cffae453066148e392ee.setContent(html_5aaf09d261129aa12aad6d67307f8f88);
+            
+        
+
+        marker_cb7e8e13b7f25dd14eaabab9be7d3f84.bindPopup(popup_31dc0a35aae0cffae453066148e392ee)
+        ;
+
+        
+    
+    
+            marker_cb7e8e13b7f25dd14eaabab9be7d3f84.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1ce1ac78ae931ce67c8f421edda1b28 = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_c010127eb42a91a0686b0d95361f8277 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a20ccc002ba2c099e4db7c8e8ba199aa = $(`<div id="html_a20ccc002ba2c099e4db7c8e8ba199aa" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_c010127eb42a91a0686b0d95361f8277.setContent(html_a20ccc002ba2c099e4db7c8e8ba199aa);
+            
+        
+
+        marker_a1ce1ac78ae931ce67c8f421edda1b28.bindPopup(popup_c010127eb42a91a0686b0d95361f8277)
+        ;
+
+        
+    
+    
+            marker_a1ce1ac78ae931ce67c8f421edda1b28.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_562f7ef01ac32c2aa547eb130715cdc9 = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_413c5ae75fcfe6721e996a89ca88dbd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f9a1e12661b746f25b722e82c085b18 = $(`<div id="html_8f9a1e12661b746f25b722e82c085b18" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_413c5ae75fcfe6721e996a89ca88dbd2.setContent(html_8f9a1e12661b746f25b722e82c085b18);
+            
+        
+
+        marker_562f7ef01ac32c2aa547eb130715cdc9.bindPopup(popup_413c5ae75fcfe6721e996a89ca88dbd2)
+        ;
+
+        
+    
+    
+            marker_562f7ef01ac32c2aa547eb130715cdc9.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2438c8b0a09a92a5b3bafa68fc3d5143 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_d07c45bfe15676fb41536b45f1f26822 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f06a90db408c3cc0f0332c62dfa61ba = $(`<div id="html_9f06a90db408c3cc0f0332c62dfa61ba" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_d07c45bfe15676fb41536b45f1f26822.setContent(html_9f06a90db408c3cc0f0332c62dfa61ba);
+            
+        
+
+        marker_2438c8b0a09a92a5b3bafa68fc3d5143.bindPopup(popup_d07c45bfe15676fb41536b45f1f26822)
+        ;
+
+        
+    
+    
+            marker_2438c8b0a09a92a5b3bafa68fc3d5143.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_755ca36a386e079be50f99ce7766c26f = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_f52daf20fe8f11320c90015b47b83868 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73dd8c66b72c6a69298dbcff4a119908 = $(`<div id="html_73dd8c66b72c6a69298dbcff4a119908" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_f52daf20fe8f11320c90015b47b83868.setContent(html_73dd8c66b72c6a69298dbcff4a119908);
+            
+        
+
+        marker_755ca36a386e079be50f99ce7766c26f.bindPopup(popup_f52daf20fe8f11320c90015b47b83868)
+        ;
+
+        
+    
+    
+            marker_755ca36a386e079be50f99ce7766c26f.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81c30e7938b4bd53d9c8ce359d7e6d71 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_19b61472356d00718632067bf11ce921 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_069c55f025e5d6bb39da9f26d6540fa2 = $(`<div id="html_069c55f025e5d6bb39da9f26d6540fa2" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_19b61472356d00718632067bf11ce921.setContent(html_069c55f025e5d6bb39da9f26d6540fa2);
+            
+        
+
+        marker_81c30e7938b4bd53d9c8ce359d7e6d71.bindPopup(popup_19b61472356d00718632067bf11ce921)
+        ;
+
+        
+    
+    
+            marker_81c30e7938b4bd53d9c8ce359d7e6d71.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e797e6f7f416093445e8e7efbec8d649 = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_5db70a9b240e3520c6066e45e8debb18 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6af4f863fe8af73a74df2136621e174c = $(`<div id="html_6af4f863fe8af73a74df2136621e174c" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_5db70a9b240e3520c6066e45e8debb18.setContent(html_6af4f863fe8af73a74df2136621e174c);
+            
+        
+
+        marker_e797e6f7f416093445e8e7efbec8d649.bindPopup(popup_5db70a9b240e3520c6066e45e8debb18)
+        ;
+
+        
+    
+    
+            marker_e797e6f7f416093445e8e7efbec8d649.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e6ad82dbf9de43bb0e629d870443e8f = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_b773a1f69f9237364ee9abb505b49233 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b25447fe2eba7b32c2e438e962078198 = $(`<div id="html_b25447fe2eba7b32c2e438e962078198" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_b773a1f69f9237364ee9abb505b49233.setContent(html_b25447fe2eba7b32c2e438e962078198);
+            
+        
+
+        marker_2e6ad82dbf9de43bb0e629d870443e8f.bindPopup(popup_b773a1f69f9237364ee9abb505b49233)
+        ;
+
+        
+    
+    
+            marker_2e6ad82dbf9de43bb0e629d870443e8f.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3aadf0f207696d55ad977112616164da = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_9bf81f55b6f7978f8b9f6abad992ec76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55adcf18a31e82e556c789c3b0bf86ea = $(`<div id="html_55adcf18a31e82e556c789c3b0bf86ea" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_9bf81f55b6f7978f8b9f6abad992ec76.setContent(html_55adcf18a31e82e556c789c3b0bf86ea);
+            
+        
+
+        marker_3aadf0f207696d55ad977112616164da.bindPopup(popup_9bf81f55b6f7978f8b9f6abad992ec76)
+        ;
+
+        
+    
+    
+            marker_3aadf0f207696d55ad977112616164da.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_547c36f9b383b74eb7ff170ee7180d30 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_37d9f38f670fb537476717728d22676b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a55c97b6aad72102ee9fa1405da2de5e = $(`<div id="html_a55c97b6aad72102ee9fa1405da2de5e" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_37d9f38f670fb537476717728d22676b.setContent(html_a55c97b6aad72102ee9fa1405da2de5e);
+            
+        
+
+        marker_547c36f9b383b74eb7ff170ee7180d30.bindPopup(popup_37d9f38f670fb537476717728d22676b)
+        ;
+
+        
+    
+    
+            marker_547c36f9b383b74eb7ff170ee7180d30.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1274cfb9783ce4926244793014884ce1 = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_732e4502a6f75e500186ef977c7deecc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bff8d200ce39fabbaa99d81632e0563 = $(`<div id="html_7bff8d200ce39fabbaa99d81632e0563" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_732e4502a6f75e500186ef977c7deecc.setContent(html_7bff8d200ce39fabbaa99d81632e0563);
+            
+        
+
+        marker_1274cfb9783ce4926244793014884ce1.bindPopup(popup_732e4502a6f75e500186ef977c7deecc)
+        ;
+
+        
+    
+    
+            marker_1274cfb9783ce4926244793014884ce1.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_276a0bfefb27694085ccb6afea59946c = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_022c2091c36545e164364fe7b2e3f717 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0572436522060c2e7721aa8652c6a30 = $(`<div id="html_f0572436522060c2e7721aa8652c6a30" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_022c2091c36545e164364fe7b2e3f717.setContent(html_f0572436522060c2e7721aa8652c6a30);
+            
+        
+
+        marker_276a0bfefb27694085ccb6afea59946c.bindPopup(popup_022c2091c36545e164364fe7b2e3f717)
+        ;
+
+        
+    
+    
+            marker_276a0bfefb27694085ccb6afea59946c.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f019790657e4839060886c17c7b631e = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_1d60c831d852294de73211ec436aad77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0901d74d4f8e1e2693e7d30ff4cad64f = $(`<div id="html_0901d74d4f8e1e2693e7d30ff4cad64f" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_1d60c831d852294de73211ec436aad77.setContent(html_0901d74d4f8e1e2693e7d30ff4cad64f);
+            
+        
+
+        marker_3f019790657e4839060886c17c7b631e.bindPopup(popup_1d60c831d852294de73211ec436aad77)
+        ;
+
+        
+    
+    
+            marker_3f019790657e4839060886c17c7b631e.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86bda3defbc93072dc91716a59caed92 = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_241b3a9f969ea39c5d02f2499ec3dab7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56853bbdac4b6931e1ec6d0a0cdec0db = $(`<div id="html_56853bbdac4b6931e1ec6d0a0cdec0db" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_241b3a9f969ea39c5d02f2499ec3dab7.setContent(html_56853bbdac4b6931e1ec6d0a0cdec0db);
+            
+        
+
+        marker_86bda3defbc93072dc91716a59caed92.bindPopup(popup_241b3a9f969ea39c5d02f2499ec3dab7)
+        ;
+
+        
+    
+    
+            marker_86bda3defbc93072dc91716a59caed92.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3ab66d3199d0a46531bc0669a0a30ca = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_48d6db8eca266abdbfbadddfc523a349 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a858224ef6981b735b9b810041bc4e12 = $(`<div id="html_a858224ef6981b735b9b810041bc4e12" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_48d6db8eca266abdbfbadddfc523a349.setContent(html_a858224ef6981b735b9b810041bc4e12);
+            
+        
+
+        marker_a3ab66d3199d0a46531bc0669a0a30ca.bindPopup(popup_48d6db8eca266abdbfbadddfc523a349)
+        ;
+
+        
+    
+    
+            marker_a3ab66d3199d0a46531bc0669a0a30ca.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ece8a67cc17628dbaa5fa65820419f0c = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_e6a5b6299606acdbf5c60090220f9a57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4aea62652c0d32411e6597258b87311 = $(`<div id="html_a4aea62652c0d32411e6597258b87311" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_e6a5b6299606acdbf5c60090220f9a57.setContent(html_a4aea62652c0d32411e6597258b87311);
+            
+        
+
+        marker_ece8a67cc17628dbaa5fa65820419f0c.bindPopup(popup_e6a5b6299606acdbf5c60090220f9a57)
+        ;
+
+        
+    
+    
+            marker_ece8a67cc17628dbaa5fa65820419f0c.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ecc3861b9dec9b8dbd33ec2fcee81492 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_4d4520ff48cc30922e55bde4a698439d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb91806b002d906d0a43dae64973932d = $(`<div id="html_eb91806b002d906d0a43dae64973932d" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_4d4520ff48cc30922e55bde4a698439d.setContent(html_eb91806b002d906d0a43dae64973932d);
+            
+        
+
+        marker_ecc3861b9dec9b8dbd33ec2fcee81492.bindPopup(popup_4d4520ff48cc30922e55bde4a698439d)
+        ;
+
+        
+    
+    
+            marker_ecc3861b9dec9b8dbd33ec2fcee81492.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2220e05ce2b0563810cedda1a235234 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_f635c4dd2b76ee370dcec0973860764e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b8856565856ebde5e558bb2295d91de = $(`<div id="html_3b8856565856ebde5e558bb2295d91de" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_f635c4dd2b76ee370dcec0973860764e.setContent(html_3b8856565856ebde5e558bb2295d91de);
+            
+        
+
+        marker_b2220e05ce2b0563810cedda1a235234.bindPopup(popup_f635c4dd2b76ee370dcec0973860764e)
+        ;
+
+        
+    
+    
+            marker_b2220e05ce2b0563810cedda1a235234.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b881c7af3108c7bf9e2d8d746ae256a = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_44c7870e84c5ffa686f292c3ca256c8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f12678845e029bee55c1b33d9d5c25c9 = $(`<div id="html_f12678845e029bee55c1b33d9d5c25c9" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_44c7870e84c5ffa686f292c3ca256c8f.setContent(html_f12678845e029bee55c1b33d9d5c25c9);
+            
+        
+
+        marker_1b881c7af3108c7bf9e2d8d746ae256a.bindPopup(popup_44c7870e84c5ffa686f292c3ca256c8f)
+        ;
+
+        
+    
+    
+            marker_1b881c7af3108c7bf9e2d8d746ae256a.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_308a036d5de6b19b30eb43e91e170c22 = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_3a44e3d7c6d6fb85ca4684663d9e50a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec12d613ed4f4f0efec5aedac27f74dc = $(`<div id="html_ec12d613ed4f4f0efec5aedac27f74dc" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_3a44e3d7c6d6fb85ca4684663d9e50a2.setContent(html_ec12d613ed4f4f0efec5aedac27f74dc);
+            
+        
+
+        marker_308a036d5de6b19b30eb43e91e170c22.bindPopup(popup_3a44e3d7c6d6fb85ca4684663d9e50a2)
+        ;
+
+        
+    
+    
+            marker_308a036d5de6b19b30eb43e91e170c22.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_171cbf39f2ff6716f9ae6d87ba50a008 = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_dede3cd43d3c9a145ebc206c0729b1b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70a7f52b0ce7d2db2c43ea280c8efa6a = $(`<div id="html_70a7f52b0ce7d2db2c43ea280c8efa6a" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_dede3cd43d3c9a145ebc206c0729b1b5.setContent(html_70a7f52b0ce7d2db2c43ea280c8efa6a);
+            
+        
+
+        marker_171cbf39f2ff6716f9ae6d87ba50a008.bindPopup(popup_dede3cd43d3c9a145ebc206c0729b1b5)
+        ;
+
+        
+    
+    
+            marker_171cbf39f2ff6716f9ae6d87ba50a008.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e071ab57c7727f401a465674bfca4f10 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_5ecf1214c0b175f11913c495de40ed37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86450f8e8c0a140f4a8b3f7e4de4970b = $(`<div id="html_86450f8e8c0a140f4a8b3f7e4de4970b" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_5ecf1214c0b175f11913c495de40ed37.setContent(html_86450f8e8c0a140f4a8b3f7e4de4970b);
+            
+        
+
+        marker_e071ab57c7727f401a465674bfca4f10.bindPopup(popup_5ecf1214c0b175f11913c495de40ed37)
+        ;
+
+        
+    
+    
+            marker_e071ab57c7727f401a465674bfca4f10.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7bbf72e8fb86302b9741d53b3b43de9 = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_ce46d3f1c2a80897b722badfd0ce6fe5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87708903c15aecdc0b658000b8784ef4 = $(`<div id="html_87708903c15aecdc0b658000b8784ef4" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_ce46d3f1c2a80897b722badfd0ce6fe5.setContent(html_87708903c15aecdc0b658000b8784ef4);
+            
+        
+
+        marker_e7bbf72e8fb86302b9741d53b3b43de9.bindPopup(popup_ce46d3f1c2a80897b722badfd0ce6fe5)
+        ;
+
+        
+    
+    
+            marker_e7bbf72e8fb86302b9741d53b3b43de9.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac5c210393fc6ad7fca35f8d63afb219 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_ab34dbdbac2550967b27d403f8b9553d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1684007bb47f0a731d9314c98d4e41a9 = $(`<div id="html_1684007bb47f0a731d9314c98d4e41a9" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_ab34dbdbac2550967b27d403f8b9553d.setContent(html_1684007bb47f0a731d9314c98d4e41a9);
+            
+        
+
+        marker_ac5c210393fc6ad7fca35f8d63afb219.bindPopup(popup_ab34dbdbac2550967b27d403f8b9553d)
+        ;
+
+        
+    
+    
+            marker_ac5c210393fc6ad7fca35f8d63afb219.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86487d5ceb1dec8a5a3fdaa9041ea516 = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_9768c993e84a8c90e10bb972e723acea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_785915647b8e20de2e825379184a6d38 = $(`<div id="html_785915647b8e20de2e825379184a6d38" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_9768c993e84a8c90e10bb972e723acea.setContent(html_785915647b8e20de2e825379184a6d38);
+            
+        
+
+        marker_86487d5ceb1dec8a5a3fdaa9041ea516.bindPopup(popup_9768c993e84a8c90e10bb972e723acea)
+        ;
+
+        
+    
+    
+            marker_86487d5ceb1dec8a5a3fdaa9041ea516.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68bae208a5e63e5695916951919f33c4 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_c14620a2fe60ce9a37cd28921dfa193c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3332f224369d79fce9e95f5186c832c5 = $(`<div id="html_3332f224369d79fce9e95f5186c832c5" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_c14620a2fe60ce9a37cd28921dfa193c.setContent(html_3332f224369d79fce9e95f5186c832c5);
+            
+        
+
+        marker_68bae208a5e63e5695916951919f33c4.bindPopup(popup_c14620a2fe60ce9a37cd28921dfa193c)
+        ;
+
+        
+    
+    
+            marker_68bae208a5e63e5695916951919f33c4.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8a466c27bcadf67d7b1d267b68c5f54 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_d9c8b0028774814a281af888a72fb973 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e1bcfd0590f011fb68c15000881cc09 = $(`<div id="html_4e1bcfd0590f011fb68c15000881cc09" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_d9c8b0028774814a281af888a72fb973.setContent(html_4e1bcfd0590f011fb68c15000881cc09);
+            
+        
+
+        marker_b8a466c27bcadf67d7b1d267b68c5f54.bindPopup(popup_d9c8b0028774814a281af888a72fb973)
+        ;
+
+        
+    
+    
+            marker_b8a466c27bcadf67d7b1d267b68c5f54.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c0ec0a135ac14be869fb4a8bda50902 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_30fa4236e1f84ab6b096a20af31cf99b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d57a0a0837fdda7f1b4542beba5e2060 = $(`<div id="html_d57a0a0837fdda7f1b4542beba5e2060" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_30fa4236e1f84ab6b096a20af31cf99b.setContent(html_d57a0a0837fdda7f1b4542beba5e2060);
+            
+        
+
+        marker_7c0ec0a135ac14be869fb4a8bda50902.bindPopup(popup_30fa4236e1f84ab6b096a20af31cf99b)
+        ;
+
+        
+    
+    
+            marker_7c0ec0a135ac14be869fb4a8bda50902.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9a33c5140e879540710d07d1e38af78 = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_d12a97402fd3f5f90a837ddf68a97aac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33d4716a942d472d9b32162bc3ff644b = $(`<div id="html_33d4716a942d472d9b32162bc3ff644b" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_d12a97402fd3f5f90a837ddf68a97aac.setContent(html_33d4716a942d472d9b32162bc3ff644b);
+            
+        
+
+        marker_c9a33c5140e879540710d07d1e38af78.bindPopup(popup_d12a97402fd3f5f90a837ddf68a97aac)
+        ;
+
+        
+    
+    
+            marker_c9a33c5140e879540710d07d1e38af78.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de2466d525601e69eed39633bcb1ee17 = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_24718ba7abceb1c15ea0c779da8717be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7223a27e5ba498b5c86a01fc074944f = $(`<div id="html_c7223a27e5ba498b5c86a01fc074944f" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_24718ba7abceb1c15ea0c779da8717be.setContent(html_c7223a27e5ba498b5c86a01fc074944f);
+            
+        
+
+        marker_de2466d525601e69eed39633bcb1ee17.bindPopup(popup_24718ba7abceb1c15ea0c779da8717be)
+        ;
+
+        
+    
+    
+            marker_de2466d525601e69eed39633bcb1ee17.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42995ae545fbaede708c20832a2dfcdc = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_db63c6da3d22a0d72e7b6aa2535be55c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ac4e25f4788af813b4f90a00661f8e0 = $(`<div id="html_3ac4e25f4788af813b4f90a00661f8e0" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_db63c6da3d22a0d72e7b6aa2535be55c.setContent(html_3ac4e25f4788af813b4f90a00661f8e0);
+            
+        
+
+        marker_42995ae545fbaede708c20832a2dfcdc.bindPopup(popup_db63c6da3d22a0d72e7b6aa2535be55c)
+        ;
+
+        
+    
+    
+            marker_42995ae545fbaede708c20832a2dfcdc.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8d7b64c5b8f422f55416db8681be9b2 = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_952a3c112a5fbef9a6096d92ce37b29b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47f126245bcea3ddf444df0d20b26f41 = $(`<div id="html_47f126245bcea3ddf444df0d20b26f41" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_952a3c112a5fbef9a6096d92ce37b29b.setContent(html_47f126245bcea3ddf444df0d20b26f41);
+            
+        
+
+        marker_c8d7b64c5b8f422f55416db8681be9b2.bindPopup(popup_952a3c112a5fbef9a6096d92ce37b29b)
+        ;
+
+        
+    
+    
+            marker_c8d7b64c5b8f422f55416db8681be9b2.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af30adfea550348279ab70ff017f2d2c = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_241866692fdd179856354337b12c0878 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a0b86fe722909117f1b42980b999f6a = $(`<div id="html_1a0b86fe722909117f1b42980b999f6a" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_241866692fdd179856354337b12c0878.setContent(html_1a0b86fe722909117f1b42980b999f6a);
+            
+        
+
+        marker_af30adfea550348279ab70ff017f2d2c.bindPopup(popup_241866692fdd179856354337b12c0878)
+        ;
+
+        
+    
+    
+            marker_af30adfea550348279ab70ff017f2d2c.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97dc02f49b8e5dd5c3e253b2c59ee9b6 = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_30a0cbf0b703156b2ac174e156184c7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82fab4e129230054e58445b737909fed = $(`<div id="html_82fab4e129230054e58445b737909fed" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_30a0cbf0b703156b2ac174e156184c7b.setContent(html_82fab4e129230054e58445b737909fed);
+            
+        
+
+        marker_97dc02f49b8e5dd5c3e253b2c59ee9b6.bindPopup(popup_30a0cbf0b703156b2ac174e156184c7b)
+        ;
+
+        
+    
+    
+            marker_97dc02f49b8e5dd5c3e253b2c59ee9b6.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83aabfef378c2c162c2b0dcdc24363ae = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_0aae2ba2781f5cd71e631fa792af123f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a8ab8e27867613d5aeef62e22d6bf91 = $(`<div id="html_2a8ab8e27867613d5aeef62e22d6bf91" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_0aae2ba2781f5cd71e631fa792af123f.setContent(html_2a8ab8e27867613d5aeef62e22d6bf91);
+            
+        
+
+        marker_83aabfef378c2c162c2b0dcdc24363ae.bindPopup(popup_0aae2ba2781f5cd71e631fa792af123f)
+        ;
+
+        
+    
+    
+            marker_83aabfef378c2c162c2b0dcdc24363ae.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ebeb5ed84022ce2557866b515984b7c = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_9652aaeebdffbf6e6eb66be10fde18b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9dd63bc1cb765720261c057850c4ce8c = $(`<div id="html_9dd63bc1cb765720261c057850c4ce8c" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_9652aaeebdffbf6e6eb66be10fde18b5.setContent(html_9dd63bc1cb765720261c057850c4ce8c);
+            
+        
+
+        marker_5ebeb5ed84022ce2557866b515984b7c.bindPopup(popup_9652aaeebdffbf6e6eb66be10fde18b5)
+        ;
+
+        
+    
+    
+            marker_5ebeb5ed84022ce2557866b515984b7c.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ba87c0b4b4e89a86eaebb36d1fb1255 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_2089578d444bd5f8c81ecc74d8d6c0b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e465f3ce37b3a7282c74787bd9093ed1 = $(`<div id="html_e465f3ce37b3a7282c74787bd9093ed1" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_2089578d444bd5f8c81ecc74d8d6c0b5.setContent(html_e465f3ce37b3a7282c74787bd9093ed1);
+            
+        
+
+        marker_8ba87c0b4b4e89a86eaebb36d1fb1255.bindPopup(popup_2089578d444bd5f8c81ecc74d8d6c0b5)
+        ;
+
+        
+    
+    
+            marker_8ba87c0b4b4e89a86eaebb36d1fb1255.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_628409fadc4b54b458a8bfc45ffb0988 = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_e76941705b4ec6f103bf54b6cdf8e457 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_300170165179ecc6bf64dc03a59eadd5 = $(`<div id="html_300170165179ecc6bf64dc03a59eadd5" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_e76941705b4ec6f103bf54b6cdf8e457.setContent(html_300170165179ecc6bf64dc03a59eadd5);
+            
+        
+
+        marker_628409fadc4b54b458a8bfc45ffb0988.bindPopup(popup_e76941705b4ec6f103bf54b6cdf8e457)
+        ;
+
+        
+    
+    
+            marker_628409fadc4b54b458a8bfc45ffb0988.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fae7eada8d5baf1cd9f559f3040e2411 = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_788cab8acb27a91c68a5df65d86044b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82ef945fd2d950568981df9987fbfa09 = $(`<div id="html_82ef945fd2d950568981df9987fbfa09" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_788cab8acb27a91c68a5df65d86044b7.setContent(html_82ef945fd2d950568981df9987fbfa09);
+            
+        
+
+        marker_fae7eada8d5baf1cd9f559f3040e2411.bindPopup(popup_788cab8acb27a91c68a5df65d86044b7)
+        ;
+
+        
+    
+    
+            marker_fae7eada8d5baf1cd9f559f3040e2411.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4375eeb697b2e3c35580df70968f1dc4 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_f4f4f17e5296915f816485d80c4f8dc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a3d52a908d97cea176b3e6d5d577e31 = $(`<div id="html_0a3d52a908d97cea176b3e6d5d577e31" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_f4f4f17e5296915f816485d80c4f8dc6.setContent(html_0a3d52a908d97cea176b3e6d5d577e31);
+            
+        
+
+        marker_4375eeb697b2e3c35580df70968f1dc4.bindPopup(popup_f4f4f17e5296915f816485d80c4f8dc6)
+        ;
+
+        
+    
+    
+            marker_4375eeb697b2e3c35580df70968f1dc4.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb7b29833c74d5e7f4c2ca33df328d0f = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_f9dd36d1919ee11bc9c5be5ea6fb90af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b883e3c5d9054f45f73f6526cdcb252f = $(`<div id="html_b883e3c5d9054f45f73f6526cdcb252f" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_f9dd36d1919ee11bc9c5be5ea6fb90af.setContent(html_b883e3c5d9054f45f73f6526cdcb252f);
+            
+        
+
+        marker_eb7b29833c74d5e7f4c2ca33df328d0f.bindPopup(popup_f9dd36d1919ee11bc9c5be5ea6fb90af)
+        ;
+
+        
+    
+    
+            marker_eb7b29833c74d5e7f4c2ca33df328d0f.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44536878ce99ec5c69931c1251ea44ff = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_8292a7be891a6ba10d6ada1f5db8bdcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89d2ea7fdc27c3ec80919c062df7aa6e = $(`<div id="html_89d2ea7fdc27c3ec80919c062df7aa6e" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_8292a7be891a6ba10d6ada1f5db8bdcb.setContent(html_89d2ea7fdc27c3ec80919c062df7aa6e);
+            
+        
+
+        marker_44536878ce99ec5c69931c1251ea44ff.bindPopup(popup_8292a7be891a6ba10d6ada1f5db8bdcb)
+        ;
+
+        
+    
+    
+            marker_44536878ce99ec5c69931c1251ea44ff.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13ffa5abae5fc10d0bebc8c58e1cef2c = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_2000f4450bcf80fc1dd34835008fc2a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b07a3660626f3daa213ef08dcdfcf06 = $(`<div id="html_2b07a3660626f3daa213ef08dcdfcf06" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_2000f4450bcf80fc1dd34835008fc2a6.setContent(html_2b07a3660626f3daa213ef08dcdfcf06);
+            
+        
+
+        marker_13ffa5abae5fc10d0bebc8c58e1cef2c.bindPopup(popup_2000f4450bcf80fc1dd34835008fc2a6)
+        ;
+
+        
+    
+    
+            marker_13ffa5abae5fc10d0bebc8c58e1cef2c.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_170808d76980b38a6547ec4f38d2b3bf = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_a9c53e161ea14ce2c5f65b1363679b08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abc00b67f5f7745b6e69c6af78058c28 = $(`<div id="html_abc00b67f5f7745b6e69c6af78058c28" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_a9c53e161ea14ce2c5f65b1363679b08.setContent(html_abc00b67f5f7745b6e69c6af78058c28);
+            
+        
+
+        marker_170808d76980b38a6547ec4f38d2b3bf.bindPopup(popup_a9c53e161ea14ce2c5f65b1363679b08)
+        ;
+
+        
+    
+    
+            marker_170808d76980b38a6547ec4f38d2b3bf.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b81f24bc8f5bff97af721b2f54a82683 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_d25e38cce4ee8e91456c3e07c3f4545c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ccb6c2d0feccdb3d159b34de6cd25a7 = $(`<div id="html_5ccb6c2d0feccdb3d159b34de6cd25a7" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_d25e38cce4ee8e91456c3e07c3f4545c.setContent(html_5ccb6c2d0feccdb3d159b34de6cd25a7);
+            
+        
+
+        marker_b81f24bc8f5bff97af721b2f54a82683.bindPopup(popup_d25e38cce4ee8e91456c3e07c3f4545c)
+        ;
+
+        
+    
+    
+            marker_b81f24bc8f5bff97af721b2f54a82683.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_946510a7898b0ec0e7f2e90e954bb350 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_77d7302aa4902c36a86b1e15c5b0c9f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52706686611fd95352c21d9db3aee534 = $(`<div id="html_52706686611fd95352c21d9db3aee534" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_77d7302aa4902c36a86b1e15c5b0c9f5.setContent(html_52706686611fd95352c21d9db3aee534);
+            
+        
+
+        marker_946510a7898b0ec0e7f2e90e954bb350.bindPopup(popup_77d7302aa4902c36a86b1e15c5b0c9f5)
+        ;
+
+        
+    
+    
+            marker_946510a7898b0ec0e7f2e90e954bb350.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b67e24d8836c13a61b45315bf14dddb = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_6e095f79d67dc280129b9c8cd8b9f0f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6b21432f53944143bd62f6910307295 = $(`<div id="html_b6b21432f53944143bd62f6910307295" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_6e095f79d67dc280129b9c8cd8b9f0f8.setContent(html_b6b21432f53944143bd62f6910307295);
+            
+        
+
+        marker_4b67e24d8836c13a61b45315bf14dddb.bindPopup(popup_6e095f79d67dc280129b9c8cd8b9f0f8)
+        ;
+
+        
+    
+    
+            marker_4b67e24d8836c13a61b45315bf14dddb.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74d965eb4618046b92359c754b676838 = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_7c71b5d9918e2097901b0c1c89483875 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_831289fc2c5e84d9f32e3cb7b27a9cb2 = $(`<div id="html_831289fc2c5e84d9f32e3cb7b27a9cb2" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_7c71b5d9918e2097901b0c1c89483875.setContent(html_831289fc2c5e84d9f32e3cb7b27a9cb2);
+            
+        
+
+        marker_74d965eb4618046b92359c754b676838.bindPopup(popup_7c71b5d9918e2097901b0c1c89483875)
+        ;
+
+        
+    
+    
+            marker_74d965eb4618046b92359c754b676838.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e50aaffdb064e6e4f94db03286583f04 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_9877ef339d540246a89fd6686f91930b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11a19cba2da9655bb9441204ee1bae99 = $(`<div id="html_11a19cba2da9655bb9441204ee1bae99" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_9877ef339d540246a89fd6686f91930b.setContent(html_11a19cba2da9655bb9441204ee1bae99);
+            
+        
+
+        marker_e50aaffdb064e6e4f94db03286583f04.bindPopup(popup_9877ef339d540246a89fd6686f91930b)
+        ;
+
+        
+    
+    
+            marker_e50aaffdb064e6e4f94db03286583f04.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_822b7838e59fb3dd7f73817aabfd311a = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_010abbaf1a4d49838555c80c3c3e4ea1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_760904e8ac1acb100cd3a7ba1683be10 = $(`<div id="html_760904e8ac1acb100cd3a7ba1683be10" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_010abbaf1a4d49838555c80c3c3e4ea1.setContent(html_760904e8ac1acb100cd3a7ba1683be10);
+            
+        
+
+        marker_822b7838e59fb3dd7f73817aabfd311a.bindPopup(popup_010abbaf1a4d49838555c80c3c3e4ea1)
+        ;
+
+        
+    
+    
+            marker_822b7838e59fb3dd7f73817aabfd311a.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6e88a728bc5464f639291be31a0d88a = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_6a9b106f3db97342a537631f86806b63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bcc65267a242a25f4ec8d408c8c9921 = $(`<div id="html_6bcc65267a242a25f4ec8d408c8c9921" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_6a9b106f3db97342a537631f86806b63.setContent(html_6bcc65267a242a25f4ec8d408c8c9921);
+            
+        
+
+        marker_d6e88a728bc5464f639291be31a0d88a.bindPopup(popup_6a9b106f3db97342a537631f86806b63)
+        ;
+
+        
+    
+    
+            marker_d6e88a728bc5464f639291be31a0d88a.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76841088974b60c0bd53a89d19e0f1e9 = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_167aabbe6f52b73b6a90436a2c776b0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_954b79f54eb18d1b1f535d4cc6e5bce1 = $(`<div id="html_954b79f54eb18d1b1f535d4cc6e5bce1" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_167aabbe6f52b73b6a90436a2c776b0d.setContent(html_954b79f54eb18d1b1f535d4cc6e5bce1);
+            
+        
+
+        marker_76841088974b60c0bd53a89d19e0f1e9.bindPopup(popup_167aabbe6f52b73b6a90436a2c776b0d)
+        ;
+
+        
+    
+    
+            marker_76841088974b60c0bd53a89d19e0f1e9.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0d83765a7bf4eee2a9f80df0fb41641 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_23075e0605392482eeab7ea3f375b931 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fadcd0a73f350c6cf7b8494898c43a2 = $(`<div id="html_3fadcd0a73f350c6cf7b8494898c43a2" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_23075e0605392482eeab7ea3f375b931.setContent(html_3fadcd0a73f350c6cf7b8494898c43a2);
+            
+        
+
+        marker_c0d83765a7bf4eee2a9f80df0fb41641.bindPopup(popup_23075e0605392482eeab7ea3f375b931)
+        ;
+
+        
+    
+    
+            marker_c0d83765a7bf4eee2a9f80df0fb41641.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3006596531e4ab4377a58be776b7aa2 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_52e6f9a2850f740e53456adcee93ba9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19cf015aa8eaf26e05fdb995a9f8686e = $(`<div id="html_19cf015aa8eaf26e05fdb995a9f8686e" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_52e6f9a2850f740e53456adcee93ba9e.setContent(html_19cf015aa8eaf26e05fdb995a9f8686e);
+            
+        
+
+        marker_c3006596531e4ab4377a58be776b7aa2.bindPopup(popup_52e6f9a2850f740e53456adcee93ba9e)
+        ;
+
+        
+    
+    
+            marker_c3006596531e4ab4377a58be776b7aa2.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5642b5a8c869f4d1772f58cdcb55b83 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_1ec6a1b1f655f0e68c3813831872d2b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59bca2a92c0f9aae168e0fe8ca5a316d = $(`<div id="html_59bca2a92c0f9aae168e0fe8ca5a316d" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_1ec6a1b1f655f0e68c3813831872d2b1.setContent(html_59bca2a92c0f9aae168e0fe8ca5a316d);
+            
+        
+
+        marker_d5642b5a8c869f4d1772f58cdcb55b83.bindPopup(popup_1ec6a1b1f655f0e68c3813831872d2b1)
+        ;
+
+        
+    
+    
+            marker_d5642b5a8c869f4d1772f58cdcb55b83.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2be4dedec6bd5b61e5cf6cdba2a55a6e = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_c61061e63c83d103d8acd75fa564f355 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9a7ea10694575b37fcf084b4319d225 = $(`<div id="html_d9a7ea10694575b37fcf084b4319d225" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_c61061e63c83d103d8acd75fa564f355.setContent(html_d9a7ea10694575b37fcf084b4319d225);
+            
+        
+
+        marker_2be4dedec6bd5b61e5cf6cdba2a55a6e.bindPopup(popup_c61061e63c83d103d8acd75fa564f355)
+        ;
+
+        
+    
+    
+            marker_2be4dedec6bd5b61e5cf6cdba2a55a6e.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24b1c8cd1ecf05d9f70a01a34372248d = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_1d378fce2fcf44085eb2462b1e88cd99 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9efb3d849c77ec98f173faca7b0469a1 = $(`<div id="html_9efb3d849c77ec98f173faca7b0469a1" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_1d378fce2fcf44085eb2462b1e88cd99.setContent(html_9efb3d849c77ec98f173faca7b0469a1);
+            
+        
+
+        marker_24b1c8cd1ecf05d9f70a01a34372248d.bindPopup(popup_1d378fce2fcf44085eb2462b1e88cd99)
+        ;
+
+        
+    
+    
+            marker_24b1c8cd1ecf05d9f70a01a34372248d.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6c1b159a0f87f5c8e15c90511248c72 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_4dd7e9abdffb8383cd34bdf2e88b5e9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f0ac4df2349705e16a6927ba070a233 = $(`<div id="html_7f0ac4df2349705e16a6927ba070a233" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_4dd7e9abdffb8383cd34bdf2e88b5e9b.setContent(html_7f0ac4df2349705e16a6927ba070a233);
+            
+        
+
+        marker_f6c1b159a0f87f5c8e15c90511248c72.bindPopup(popup_4dd7e9abdffb8383cd34bdf2e88b5e9b)
+        ;
+
+        
+    
+    
+            marker_f6c1b159a0f87f5c8e15c90511248c72.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b16418c315abf54963e2014b70c2fb5 = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_603103b068f85a5d51771c59c9cc3494 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_195efaf418369ca9bb08630dec689622 = $(`<div id="html_195efaf418369ca9bb08630dec689622" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_603103b068f85a5d51771c59c9cc3494.setContent(html_195efaf418369ca9bb08630dec689622);
+            
+        
+
+        marker_5b16418c315abf54963e2014b70c2fb5.bindPopup(popup_603103b068f85a5d51771c59c9cc3494)
+        ;
+
+        
+    
+    
+            marker_5b16418c315abf54963e2014b70c2fb5.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33788e667cced08d9e35198e9aaf7318 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_9acb4c84d00c616eede0407f4513c0fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60aaa94ae1af9af9e69ecb50ed2c7082 = $(`<div id="html_60aaa94ae1af9af9e69ecb50ed2c7082" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_9acb4c84d00c616eede0407f4513c0fe.setContent(html_60aaa94ae1af9af9e69ecb50ed2c7082);
+            
+        
+
+        marker_33788e667cced08d9e35198e9aaf7318.bindPopup(popup_9acb4c84d00c616eede0407f4513c0fe)
+        ;
+
+        
+    
+    
+            marker_33788e667cced08d9e35198e9aaf7318.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_500d895dfa32443b07ec292528220f8f = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_963e4153ef449f9e04d41af704b16cbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a02c845fad5dcb3e1b6f11733814ae4 = $(`<div id="html_3a02c845fad5dcb3e1b6f11733814ae4" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_963e4153ef449f9e04d41af704b16cbc.setContent(html_3a02c845fad5dcb3e1b6f11733814ae4);
+            
+        
+
+        marker_500d895dfa32443b07ec292528220f8f.bindPopup(popup_963e4153ef449f9e04d41af704b16cbc)
+        ;
+
+        
+    
+    
+            marker_500d895dfa32443b07ec292528220f8f.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5335459164783983a024dbce123491c2 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_4588ca4a676bc35701a21e91bd24225d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc3cf5407e83b666c10c1d8d01ef5245 = $(`<div id="html_cc3cf5407e83b666c10c1d8d01ef5245" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_4588ca4a676bc35701a21e91bd24225d.setContent(html_cc3cf5407e83b666c10c1d8d01ef5245);
+            
+        
+
+        marker_5335459164783983a024dbce123491c2.bindPopup(popup_4588ca4a676bc35701a21e91bd24225d)
+        ;
+
+        
+    
+    
+            marker_5335459164783983a024dbce123491c2.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcc36b4f2789b957554a1492ae40ae0b = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_cacd1f6cfb34b3e6b72581aae8b3c67d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f0979cece0a9621a1de99a991149d8e = $(`<div id="html_1f0979cece0a9621a1de99a991149d8e" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_cacd1f6cfb34b3e6b72581aae8b3c67d.setContent(html_1f0979cece0a9621a1de99a991149d8e);
+            
+        
+
+        marker_dcc36b4f2789b957554a1492ae40ae0b.bindPopup(popup_cacd1f6cfb34b3e6b72581aae8b3c67d)
+        ;
+
+        
+    
+    
+            marker_dcc36b4f2789b957554a1492ae40ae0b.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd70eaa1141c5918912fa38f6f2478c0 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_33d41a9a9c61a2dea9cf2292447a6aea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6c872fdb3eae396d94315a70e3003c4 = $(`<div id="html_d6c872fdb3eae396d94315a70e3003c4" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_33d41a9a9c61a2dea9cf2292447a6aea.setContent(html_d6c872fdb3eae396d94315a70e3003c4);
+            
+        
+
+        marker_dd70eaa1141c5918912fa38f6f2478c0.bindPopup(popup_33d41a9a9c61a2dea9cf2292447a6aea)
+        ;
+
+        
+    
+    
+            marker_dd70eaa1141c5918912fa38f6f2478c0.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb566335fa8d7a15a1648eee547d620e = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_48f71e0879b723b43147ea42287e0c7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b21c03c898d5b4cae816529d705e54a5 = $(`<div id="html_b21c03c898d5b4cae816529d705e54a5" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_48f71e0879b723b43147ea42287e0c7f.setContent(html_b21c03c898d5b4cae816529d705e54a5);
+            
+        
+
+        marker_fb566335fa8d7a15a1648eee547d620e.bindPopup(popup_48f71e0879b723b43147ea42287e0c7f)
+        ;
+
+        
+    
+    
+            marker_fb566335fa8d7a15a1648eee547d620e.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e23991cea489018e39a5513fc80ddeca = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_a210cac529879a77cd619c54d4185fb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93e0d8e5007cae49e6e01ca9830863d0 = $(`<div id="html_93e0d8e5007cae49e6e01ca9830863d0" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_a210cac529879a77cd619c54d4185fb8.setContent(html_93e0d8e5007cae49e6e01ca9830863d0);
+            
+        
+
+        marker_e23991cea489018e39a5513fc80ddeca.bindPopup(popup_a210cac529879a77cd619c54d4185fb8)
+        ;
+
+        
+    
+    
+            marker_e23991cea489018e39a5513fc80ddeca.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a08071ddd589da4077ae03729b5e6734 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_834470c128bfc0228a70e3fbd348e835 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aad551fe44942ed4c7d7d27f98fa3d9d = $(`<div id="html_aad551fe44942ed4c7d7d27f98fa3d9d" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_834470c128bfc0228a70e3fbd348e835.setContent(html_aad551fe44942ed4c7d7d27f98fa3d9d);
+            
+        
+
+        marker_a08071ddd589da4077ae03729b5e6734.bindPopup(popup_834470c128bfc0228a70e3fbd348e835)
+        ;
+
+        
+    
+    
+            marker_a08071ddd589da4077ae03729b5e6734.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b12654b2fb74bea292b21dfec7a5429 = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_9100fa21ffd50292801500de3f0753d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb4069e4476df471d66cb9f459377e29 = $(`<div id="html_bb4069e4476df471d66cb9f459377e29" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_9100fa21ffd50292801500de3f0753d4.setContent(html_bb4069e4476df471d66cb9f459377e29);
+            
+        
+
+        marker_9b12654b2fb74bea292b21dfec7a5429.bindPopup(popup_9100fa21ffd50292801500de3f0753d4)
+        ;
+
+        
+    
+    
+            marker_9b12654b2fb74bea292b21dfec7a5429.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29d38b5f92771219507d24ce5b50f805 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_56f79766ef1f778dd69d5d4839963791 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ef3a929d5c7a154919626c1f245ad76 = $(`<div id="html_1ef3a929d5c7a154919626c1f245ad76" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_56f79766ef1f778dd69d5d4839963791.setContent(html_1ef3a929d5c7a154919626c1f245ad76);
+            
+        
+
+        marker_29d38b5f92771219507d24ce5b50f805.bindPopup(popup_56f79766ef1f778dd69d5d4839963791)
+        ;
+
+        
+    
+    
+            marker_29d38b5f92771219507d24ce5b50f805.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1a6ecce2a7ad058a51b168917216a63 = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_038c6f3317a7e68f2ac49643b3202e9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d81fbdddb17bafb5365195a863b9d89 = $(`<div id="html_9d81fbdddb17bafb5365195a863b9d89" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_038c6f3317a7e68f2ac49643b3202e9c.setContent(html_9d81fbdddb17bafb5365195a863b9d89);
+            
+        
+
+        marker_e1a6ecce2a7ad058a51b168917216a63.bindPopup(popup_038c6f3317a7e68f2ac49643b3202e9c)
+        ;
+
+        
+    
+    
+            marker_e1a6ecce2a7ad058a51b168917216a63.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66ead10efd2483762503f932698da74c = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_8956c6bde3c41f89136025b315169254 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8926f41e9c9c30740d1f67ce1d617656 = $(`<div id="html_8926f41e9c9c30740d1f67ce1d617656" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_8956c6bde3c41f89136025b315169254.setContent(html_8926f41e9c9c30740d1f67ce1d617656);
+            
+        
+
+        marker_66ead10efd2483762503f932698da74c.bindPopup(popup_8956c6bde3c41f89136025b315169254)
+        ;
+
+        
+    
+    
+            marker_66ead10efd2483762503f932698da74c.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a57d3eb3cf79ebaed642468be342f05 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_330af14b711a446f979d7044fa03e821 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_755dcd4012d6e4ef5a198c3bdc4c5662 = $(`<div id="html_755dcd4012d6e4ef5a198c3bdc4c5662" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_330af14b711a446f979d7044fa03e821.setContent(html_755dcd4012d6e4ef5a198c3bdc4c5662);
+            
+        
+
+        marker_4a57d3eb3cf79ebaed642468be342f05.bindPopup(popup_330af14b711a446f979d7044fa03e821)
+        ;
+
+        
+    
+    
+            marker_4a57d3eb3cf79ebaed642468be342f05.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c8c3d962ec226909166f56ee2012de1 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_40de231c36cf9c3566ac5c713d7cdb56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_421697deb5673018a6d16f9f3cca87d4 = $(`<div id="html_421697deb5673018a6d16f9f3cca87d4" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_40de231c36cf9c3566ac5c713d7cdb56.setContent(html_421697deb5673018a6d16f9f3cca87d4);
+            
+        
+
+        marker_9c8c3d962ec226909166f56ee2012de1.bindPopup(popup_40de231c36cf9c3566ac5c713d7cdb56)
+        ;
+
+        
+    
+    
+            marker_9c8c3d962ec226909166f56ee2012de1.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc714f252ddf7e2412ed29708a59a55a = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_0bc43241ff5cbc72599134fee43d96ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c49d8441c6b9119f80864ea1d429614 = $(`<div id="html_4c49d8441c6b9119f80864ea1d429614" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_0bc43241ff5cbc72599134fee43d96ba.setContent(html_4c49d8441c6b9119f80864ea1d429614);
+            
+        
+
+        marker_cc714f252ddf7e2412ed29708a59a55a.bindPopup(popup_0bc43241ff5cbc72599134fee43d96ba)
+        ;
+
+        
+    
+    
+            marker_cc714f252ddf7e2412ed29708a59a55a.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd1688adb22c354873d789e49a9eb7bd = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_d19c7ccffc120b90458acc92ee38a2a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62bb53e47c482944d2c8b0dbafa32d02 = $(`<div id="html_62bb53e47c482944d2c8b0dbafa32d02" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_d19c7ccffc120b90458acc92ee38a2a7.setContent(html_62bb53e47c482944d2c8b0dbafa32d02);
+            
+        
+
+        marker_dd1688adb22c354873d789e49a9eb7bd.bindPopup(popup_d19c7ccffc120b90458acc92ee38a2a7)
+        ;
+
+        
+    
+    
+            marker_dd1688adb22c354873d789e49a9eb7bd.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b739159a68dddcbceebe5078c7cc3e37 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_2ba94a6baefb616d897534c4a8e3ecd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7dfcfa6ffa3487b1d9af12d2a84bca6 = $(`<div id="html_d7dfcfa6ffa3487b1d9af12d2a84bca6" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_2ba94a6baefb616d897534c4a8e3ecd6.setContent(html_d7dfcfa6ffa3487b1d9af12d2a84bca6);
+            
+        
+
+        marker_b739159a68dddcbceebe5078c7cc3e37.bindPopup(popup_2ba94a6baefb616d897534c4a8e3ecd6)
+        ;
+
+        
+    
+    
+            marker_b739159a68dddcbceebe5078c7cc3e37.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9cc2f85c96d96f5afabecdb57e81f4a = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_22cb2a8c442fefca903868e48b04d571 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc79896124b1d30007ef06c43e9551bb = $(`<div id="html_dc79896124b1d30007ef06c43e9551bb" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_22cb2a8c442fefca903868e48b04d571.setContent(html_dc79896124b1d30007ef06c43e9551bb);
+            
+        
+
+        marker_b9cc2f85c96d96f5afabecdb57e81f4a.bindPopup(popup_22cb2a8c442fefca903868e48b04d571)
+        ;
+
+        
+    
+    
+            marker_b9cc2f85c96d96f5afabecdb57e81f4a.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fa4e344590586e1655a16a195be6c11 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_37744545bea4631e073f3a16922d396d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acd26557429b4809bdcdc9d4d8b75654 = $(`<div id="html_acd26557429b4809bdcdc9d4d8b75654" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_37744545bea4631e073f3a16922d396d.setContent(html_acd26557429b4809bdcdc9d4d8b75654);
+            
+        
+
+        marker_9fa4e344590586e1655a16a195be6c11.bindPopup(popup_37744545bea4631e073f3a16922d396d)
+        ;
+
+        
+    
+    
+            marker_9fa4e344590586e1655a16a195be6c11.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0bb9c10322286ee2bb509aed0462ebc = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_3e1330f91e55821e1a4d9d9b117bf611 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b8f405564c70105ff3d144790f98c2b = $(`<div id="html_9b8f405564c70105ff3d144790f98c2b" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_3e1330f91e55821e1a4d9d9b117bf611.setContent(html_9b8f405564c70105ff3d144790f98c2b);
+            
+        
+
+        marker_f0bb9c10322286ee2bb509aed0462ebc.bindPopup(popup_3e1330f91e55821e1a4d9d9b117bf611)
+        ;
+
+        
+    
+    
+            marker_f0bb9c10322286ee2bb509aed0462ebc.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1d0adb68a6b1e8d890859ba16d611fc = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_d1744efd53ecae85c03b7b9c80b427a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d49534f15a1bdd0f0ce8b3e29854f6d = $(`<div id="html_0d49534f15a1bdd0f0ce8b3e29854f6d" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_d1744efd53ecae85c03b7b9c80b427a3.setContent(html_0d49534f15a1bdd0f0ce8b3e29854f6d);
+            
+        
+
+        marker_f1d0adb68a6b1e8d890859ba16d611fc.bindPopup(popup_d1744efd53ecae85c03b7b9c80b427a3)
+        ;
+
+        
+    
+    
+            marker_f1d0adb68a6b1e8d890859ba16d611fc.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65bce72c479e848dbbea3c1fa1fe9945 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_edf76ad93af9b66cbc805c84e85a7b4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c81400a508c5856439014ec52fd98f4d = $(`<div id="html_c81400a508c5856439014ec52fd98f4d" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_edf76ad93af9b66cbc805c84e85a7b4f.setContent(html_c81400a508c5856439014ec52fd98f4d);
+            
+        
+
+        marker_65bce72c479e848dbbea3c1fa1fe9945.bindPopup(popup_edf76ad93af9b66cbc805c84e85a7b4f)
+        ;
+
+        
+    
+    
+            marker_65bce72c479e848dbbea3c1fa1fe9945.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7009679fa024acf5cceb2c8210d75a36 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_095491dce2d60727f48b7fe792a00d7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a82dd0bd8a1be264278c1105cfa0961 = $(`<div id="html_7a82dd0bd8a1be264278c1105cfa0961" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_095491dce2d60727f48b7fe792a00d7c.setContent(html_7a82dd0bd8a1be264278c1105cfa0961);
+            
+        
+
+        marker_7009679fa024acf5cceb2c8210d75a36.bindPopup(popup_095491dce2d60727f48b7fe792a00d7c)
+        ;
+
+        
+    
+    
+            marker_7009679fa024acf5cceb2c8210d75a36.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56cb16f675b21b7d02a919c58cf63411 = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_6aaa11c908c88e068ad5b2b5de4a5f30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_410f641b928d7e1c193b7f5ce4639855 = $(`<div id="html_410f641b928d7e1c193b7f5ce4639855" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_6aaa11c908c88e068ad5b2b5de4a5f30.setContent(html_410f641b928d7e1c193b7f5ce4639855);
+            
+        
+
+        marker_56cb16f675b21b7d02a919c58cf63411.bindPopup(popup_6aaa11c908c88e068ad5b2b5de4a5f30)
+        ;
+
+        
+    
+    
+            marker_56cb16f675b21b7d02a919c58cf63411.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da17d25995427974ba18b1aa22753d08 = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_a467b6aabf66a2ad3f89745b9dd360fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ea4c6cd2335415f214e503ae49a0150 = $(`<div id="html_5ea4c6cd2335415f214e503ae49a0150" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_a467b6aabf66a2ad3f89745b9dd360fb.setContent(html_5ea4c6cd2335415f214e503ae49a0150);
+            
+        
+
+        marker_da17d25995427974ba18b1aa22753d08.bindPopup(popup_a467b6aabf66a2ad3f89745b9dd360fb)
+        ;
+
+        
+    
+    
+            marker_da17d25995427974ba18b1aa22753d08.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc56f6822b61c544558559a6c0f68591 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_308444cef67512b0ac7e90fcdffc177f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c64a47f5ec8cc179be2e1155bc711c48 = $(`<div id="html_c64a47f5ec8cc179be2e1155bc711c48" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_308444cef67512b0ac7e90fcdffc177f.setContent(html_c64a47f5ec8cc179be2e1155bc711c48);
+            
+        
+
+        marker_cc56f6822b61c544558559a6c0f68591.bindPopup(popup_308444cef67512b0ac7e90fcdffc177f)
+        ;
+
+        
+    
+    
+            marker_cc56f6822b61c544558559a6c0f68591.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38ae6ee5da4659394ec9cc075688cfdd = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_470f24c2a6874180cf19fd2e083c236c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bf002c6f6667ed502418ee618711d19 = $(`<div id="html_7bf002c6f6667ed502418ee618711d19" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_470f24c2a6874180cf19fd2e083c236c.setContent(html_7bf002c6f6667ed502418ee618711d19);
+            
+        
+
+        marker_38ae6ee5da4659394ec9cc075688cfdd.bindPopup(popup_470f24c2a6874180cf19fd2e083c236c)
+        ;
+
+        
+    
+    
+            marker_38ae6ee5da4659394ec9cc075688cfdd.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37b015c88e5357d6a1f5af342254b3e0 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_2eb01f9a4e5d7d861a8a78ad6808bab9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_317b7b43c8b7a6361661422175f7d1c2 = $(`<div id="html_317b7b43c8b7a6361661422175f7d1c2" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_2eb01f9a4e5d7d861a8a78ad6808bab9.setContent(html_317b7b43c8b7a6361661422175f7d1c2);
+            
+        
+
+        marker_37b015c88e5357d6a1f5af342254b3e0.bindPopup(popup_2eb01f9a4e5d7d861a8a78ad6808bab9)
+        ;
+
+        
+    
+    
+            marker_37b015c88e5357d6a1f5af342254b3e0.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13876036a361cb93e74ac0171fa5d14f = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_bafab366c68e0640dd281ad1f5d7440f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d9723c1d06686bfa7ad8eb40ae6a07d = $(`<div id="html_9d9723c1d06686bfa7ad8eb40ae6a07d" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_bafab366c68e0640dd281ad1f5d7440f.setContent(html_9d9723c1d06686bfa7ad8eb40ae6a07d);
+            
+        
+
+        marker_13876036a361cb93e74ac0171fa5d14f.bindPopup(popup_bafab366c68e0640dd281ad1f5d7440f)
+        ;
+
+        
+    
+    
+            marker_13876036a361cb93e74ac0171fa5d14f.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d397aced4a06e3350fcc7df8f83a324 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_14f1b5ceec4ad242e5a94e6c3ce9c77d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1777d3b49a33d81b1a32b3d7e425bd0e = $(`<div id="html_1777d3b49a33d81b1a32b3d7e425bd0e" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_14f1b5ceec4ad242e5a94e6c3ce9c77d.setContent(html_1777d3b49a33d81b1a32b3d7e425bd0e);
+            
+        
+
+        marker_8d397aced4a06e3350fcc7df8f83a324.bindPopup(popup_14f1b5ceec4ad242e5a94e6c3ce9c77d)
+        ;
+
+        
+    
+    
+            marker_8d397aced4a06e3350fcc7df8f83a324.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f95e5960586eb9237eaa82c2caad237 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_81f00d6d309c46474f5e213c1c3f0bc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10fcb7d932c45238a41249368e4a19be = $(`<div id="html_10fcb7d932c45238a41249368e4a19be" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_81f00d6d309c46474f5e213c1c3f0bc1.setContent(html_10fcb7d932c45238a41249368e4a19be);
+            
+        
+
+        marker_0f95e5960586eb9237eaa82c2caad237.bindPopup(popup_81f00d6d309c46474f5e213c1c3f0bc1)
+        ;
+
+        
+    
+    
+            marker_0f95e5960586eb9237eaa82c2caad237.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_122fea5ddf09aeddbe1cb737e852824a = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_30281583362a392f3045cd63404342cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63b69183f169492bcef842f44eceda8d = $(`<div id="html_63b69183f169492bcef842f44eceda8d" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_30281583362a392f3045cd63404342cb.setContent(html_63b69183f169492bcef842f44eceda8d);
+            
+        
+
+        marker_122fea5ddf09aeddbe1cb737e852824a.bindPopup(popup_30281583362a392f3045cd63404342cb)
+        ;
+
+        
+    
+    
+            marker_122fea5ddf09aeddbe1cb737e852824a.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36b7089b429430a3ae15128e0dbdbd4e = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_8c8c91164df6a627b830b8f8c74d9379 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1efa5d7ba9b4716e3fba55225638988 = $(`<div id="html_c1efa5d7ba9b4716e3fba55225638988" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_8c8c91164df6a627b830b8f8c74d9379.setContent(html_c1efa5d7ba9b4716e3fba55225638988);
+            
+        
+
+        marker_36b7089b429430a3ae15128e0dbdbd4e.bindPopup(popup_8c8c91164df6a627b830b8f8c74d9379)
+        ;
+
+        
+    
+    
+            marker_36b7089b429430a3ae15128e0dbdbd4e.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1c47e15151dbb68f1c492199364a5cc = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_e4d353dbc58073e2af1dda22b1c66b1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61bf24514735514769b275d65e2fc853 = $(`<div id="html_61bf24514735514769b275d65e2fc853" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_e4d353dbc58073e2af1dda22b1c66b1c.setContent(html_61bf24514735514769b275d65e2fc853);
+            
+        
+
+        marker_a1c47e15151dbb68f1c492199364a5cc.bindPopup(popup_e4d353dbc58073e2af1dda22b1c66b1c)
+        ;
+
+        
+    
+    
+            marker_a1c47e15151dbb68f1c492199364a5cc.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f43e2f7fe6958dc5c01ebf766b4000ce = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_316d15cf13a4412df5b0061072510abd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7dc62e47c28e2ba05f8a53581fcb540 = $(`<div id="html_c7dc62e47c28e2ba05f8a53581fcb540" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_316d15cf13a4412df5b0061072510abd.setContent(html_c7dc62e47c28e2ba05f8a53581fcb540);
+            
+        
+
+        marker_f43e2f7fe6958dc5c01ebf766b4000ce.bindPopup(popup_316d15cf13a4412df5b0061072510abd)
+        ;
+
+        
+    
+    
+            marker_f43e2f7fe6958dc5c01ebf766b4000ce.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd2686ec0917bc7cc201e542f8ffb3e9 = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_9ad901c70606367b01b933c9d175d3d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bfe4c639947dcf6b364a414c67accd7 = $(`<div id="html_2bfe4c639947dcf6b364a414c67accd7" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_9ad901c70606367b01b933c9d175d3d0.setContent(html_2bfe4c639947dcf6b364a414c67accd7);
+            
+        
+
+        marker_bd2686ec0917bc7cc201e542f8ffb3e9.bindPopup(popup_9ad901c70606367b01b933c9d175d3d0)
+        ;
+
+        
+    
+    
+            marker_bd2686ec0917bc7cc201e542f8ffb3e9.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89be59f2e564f21e149b87b32a284822 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_48a84fd928dd0f2e8831a0e73cbd9a57 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7079cb44ae3db65dfdac889d7d9187d9 = $(`<div id="html_7079cb44ae3db65dfdac889d7d9187d9" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_48a84fd928dd0f2e8831a0e73cbd9a57.setContent(html_7079cb44ae3db65dfdac889d7d9187d9);
+            
+        
+
+        marker_89be59f2e564f21e149b87b32a284822.bindPopup(popup_48a84fd928dd0f2e8831a0e73cbd9a57)
+        ;
+
+        
+    
+    
+            marker_89be59f2e564f21e149b87b32a284822.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74d09b588bed53c93e911fc318c1a2ed = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_cc04aaa3b8cc718ff613b0f8c8cd46e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0247d2851ce1232fb8fd19b45b637d3f = $(`<div id="html_0247d2851ce1232fb8fd19b45b637d3f" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_cc04aaa3b8cc718ff613b0f8c8cd46e4.setContent(html_0247d2851ce1232fb8fd19b45b637d3f);
+            
+        
+
+        marker_74d09b588bed53c93e911fc318c1a2ed.bindPopup(popup_cc04aaa3b8cc718ff613b0f8c8cd46e4)
+        ;
+
+        
+    
+    
+            marker_74d09b588bed53c93e911fc318c1a2ed.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29c7bde6776165c98ac6a3333a2a0300 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_2b154fd03a7879ff0617085913e9903a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a66d7ab27608b1fbce600c55e381205b = $(`<div id="html_a66d7ab27608b1fbce600c55e381205b" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_2b154fd03a7879ff0617085913e9903a.setContent(html_a66d7ab27608b1fbce600c55e381205b);
+            
+        
+
+        marker_29c7bde6776165c98ac6a3333a2a0300.bindPopup(popup_2b154fd03a7879ff0617085913e9903a)
+        ;
+
+        
+    
+    
+            marker_29c7bde6776165c98ac6a3333a2a0300.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9997e07355661c7021604fce2305d1b = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_0bbbdebfde9fa967a8a00cebb78b1bc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dc2b869a3019efb57b3eaca87ce133c = $(`<div id="html_0dc2b869a3019efb57b3eaca87ce133c" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_0bbbdebfde9fa967a8a00cebb78b1bc6.setContent(html_0dc2b869a3019efb57b3eaca87ce133c);
+            
+        
+
+        marker_b9997e07355661c7021604fce2305d1b.bindPopup(popup_0bbbdebfde9fa967a8a00cebb78b1bc6)
+        ;
+
+        
+    
+    
+            marker_b9997e07355661c7021604fce2305d1b.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c3670fe6c6631afbc1f34cf5653e912 = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_4068f7994d4129975624d8733b65746a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06c340b53030933478a4e95a0492c6f6 = $(`<div id="html_06c340b53030933478a4e95a0492c6f6" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_4068f7994d4129975624d8733b65746a.setContent(html_06c340b53030933478a4e95a0492c6f6);
+            
+        
+
+        marker_5c3670fe6c6631afbc1f34cf5653e912.bindPopup(popup_4068f7994d4129975624d8733b65746a)
+        ;
+
+        
+    
+    
+            marker_5c3670fe6c6631afbc1f34cf5653e912.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24282e736e466ad80d36428f34d5aa8b = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_c6aa08e8c6834ffc35b429c85e88c741 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_288c92127d6079a664e4759218aa7cee = $(`<div id="html_288c92127d6079a664e4759218aa7cee" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_c6aa08e8c6834ffc35b429c85e88c741.setContent(html_288c92127d6079a664e4759218aa7cee);
+            
+        
+
+        marker_24282e736e466ad80d36428f34d5aa8b.bindPopup(popup_c6aa08e8c6834ffc35b429c85e88c741)
+        ;
+
+        
+    
+    
+            marker_24282e736e466ad80d36428f34d5aa8b.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b97fbea0a0123c37764ffae59a27125 = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_a3145d8a9a73d41f79f64d942a4feae3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b1ff5d9c24d5a1a0a70f0739ab7be75 = $(`<div id="html_6b1ff5d9c24d5a1a0a70f0739ab7be75" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_a3145d8a9a73d41f79f64d942a4feae3.setContent(html_6b1ff5d9c24d5a1a0a70f0739ab7be75);
+            
+        
+
+        marker_1b97fbea0a0123c37764ffae59a27125.bindPopup(popup_a3145d8a9a73d41f79f64d942a4feae3)
+        ;
+
+        
+    
+    
+            marker_1b97fbea0a0123c37764ffae59a27125.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29dae98fe3950276cc363a7adbd353da = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_dcd1037ffa0b2cc8f5a4f5ae503c68d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_252a3216d792944da8676ce339e2f170 = $(`<div id="html_252a3216d792944da8676ce339e2f170" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_dcd1037ffa0b2cc8f5a4f5ae503c68d0.setContent(html_252a3216d792944da8676ce339e2f170);
+            
+        
+
+        marker_29dae98fe3950276cc363a7adbd353da.bindPopup(popup_dcd1037ffa0b2cc8f5a4f5ae503c68d0)
+        ;
+
+        
+    
+    
+            marker_29dae98fe3950276cc363a7adbd353da.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a5c38748f02ceb9b5d8bf0ebab42019 = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_76c3f412f307c54a0cde49679c83e774 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_250379642939dc6c5d463a04579ac557 = $(`<div id="html_250379642939dc6c5d463a04579ac557" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_76c3f412f307c54a0cde49679c83e774.setContent(html_250379642939dc6c5d463a04579ac557);
+            
+        
+
+        marker_2a5c38748f02ceb9b5d8bf0ebab42019.bindPopup(popup_76c3f412f307c54a0cde49679c83e774)
+        ;
+
+        
+    
+    
+            marker_2a5c38748f02ceb9b5d8bf0ebab42019.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_438b5c98237bfc19c9fbc7a5ac950d5e = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_30b0934aa567639b585868fa6814df00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f1ed6b08a89cb1ff264ac5a2aed63b1 = $(`<div id="html_7f1ed6b08a89cb1ff264ac5a2aed63b1" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_30b0934aa567639b585868fa6814df00.setContent(html_7f1ed6b08a89cb1ff264ac5a2aed63b1);
+            
+        
+
+        marker_438b5c98237bfc19c9fbc7a5ac950d5e.bindPopup(popup_30b0934aa567639b585868fa6814df00)
+        ;
+
+        
+    
+    
+            marker_438b5c98237bfc19c9fbc7a5ac950d5e.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1a10fb5c21e90b195d5e735b7128f4c = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_36ad5f2e2694dbbc9aae793d82520cda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d790d0f75ee755eb84d22c2d63624db = $(`<div id="html_9d790d0f75ee755eb84d22c2d63624db" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_36ad5f2e2694dbbc9aae793d82520cda.setContent(html_9d790d0f75ee755eb84d22c2d63624db);
+            
+        
+
+        marker_a1a10fb5c21e90b195d5e735b7128f4c.bindPopup(popup_36ad5f2e2694dbbc9aae793d82520cda)
+        ;
+
+        
+    
+    
+            marker_a1a10fb5c21e90b195d5e735b7128f4c.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_accb6ed55dd3f3228e351adc6ae82fc1 = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_1a73e42c0a0ab1dd9f6edd4290a9e1e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cb9a641b9a909c4096cd676ec950571 = $(`<div id="html_5cb9a641b9a909c4096cd676ec950571" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_1a73e42c0a0ab1dd9f6edd4290a9e1e0.setContent(html_5cb9a641b9a909c4096cd676ec950571);
+            
+        
+
+        marker_accb6ed55dd3f3228e351adc6ae82fc1.bindPopup(popup_1a73e42c0a0ab1dd9f6edd4290a9e1e0)
+        ;
+
+        
+    
+    
+            marker_accb6ed55dd3f3228e351adc6ae82fc1.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5a9a704893177a964862ceaa06afd76 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_dccd5c4b804ab399729166752ba28a03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b3e055ab7bc954ab619db048b059f69 = $(`<div id="html_6b3e055ab7bc954ab619db048b059f69" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_dccd5c4b804ab399729166752ba28a03.setContent(html_6b3e055ab7bc954ab619db048b059f69);
+            
+        
+
+        marker_b5a9a704893177a964862ceaa06afd76.bindPopup(popup_dccd5c4b804ab399729166752ba28a03)
+        ;
+
+        
+    
+    
+            marker_b5a9a704893177a964862ceaa06afd76.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50804d028867294eea0b7c6a136fc48d = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_9ee7511d286b4048495e1aeccb852c39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f547c2a4adb10cf513db6d6e8d43d10 = $(`<div id="html_5f547c2a4adb10cf513db6d6e8d43d10" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_9ee7511d286b4048495e1aeccb852c39.setContent(html_5f547c2a4adb10cf513db6d6e8d43d10);
+            
+        
+
+        marker_50804d028867294eea0b7c6a136fc48d.bindPopup(popup_9ee7511d286b4048495e1aeccb852c39)
+        ;
+
+        
+    
+    
+            marker_50804d028867294eea0b7c6a136fc48d.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f256666c3b1813e92afdc74b9e5c89f = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_7c3a573742f87f3408176082230882af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71f6d9d964d4fd1ec972b1ebf7743116 = $(`<div id="html_71f6d9d964d4fd1ec972b1ebf7743116" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_7c3a573742f87f3408176082230882af.setContent(html_71f6d9d964d4fd1ec972b1ebf7743116);
+            
+        
+
+        marker_7f256666c3b1813e92afdc74b9e5c89f.bindPopup(popup_7c3a573742f87f3408176082230882af)
+        ;
+
+        
+    
+    
+            marker_7f256666c3b1813e92afdc74b9e5c89f.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0ebf50b72775ef5c568ba3a4e4f9e8c = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_cb2a9039c27586117d5f1aebbb9f1c7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4be54b09e09bf0485a8b5107d3341087 = $(`<div id="html_4be54b09e09bf0485a8b5107d3341087" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_cb2a9039c27586117d5f1aebbb9f1c7f.setContent(html_4be54b09e09bf0485a8b5107d3341087);
+            
+        
+
+        marker_a0ebf50b72775ef5c568ba3a4e4f9e8c.bindPopup(popup_cb2a9039c27586117d5f1aebbb9f1c7f)
+        ;
+
+        
+    
+    
+            marker_a0ebf50b72775ef5c568ba3a4e4f9e8c.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b4f880ab3b723fbb5c1f43ee56d5dfc = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_f07254d5185d7271ed1c72a4b0807999 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5223c2dd22843b871236971da0cc3db9 = $(`<div id="html_5223c2dd22843b871236971da0cc3db9" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_f07254d5185d7271ed1c72a4b0807999.setContent(html_5223c2dd22843b871236971da0cc3db9);
+            
+        
+
+        marker_1b4f880ab3b723fbb5c1f43ee56d5dfc.bindPopup(popup_f07254d5185d7271ed1c72a4b0807999)
+        ;
+
+        
+    
+    
+            marker_1b4f880ab3b723fbb5c1f43ee56d5dfc.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6afbc6aa0cb8a8f08381267dd6bc5937 = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_7d457b0533de5f623863784a21e31385 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0299686f4bc80aa0f58cb72a885328f6 = $(`<div id="html_0299686f4bc80aa0f58cb72a885328f6" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_7d457b0533de5f623863784a21e31385.setContent(html_0299686f4bc80aa0f58cb72a885328f6);
+            
+        
+
+        marker_6afbc6aa0cb8a8f08381267dd6bc5937.bindPopup(popup_7d457b0533de5f623863784a21e31385)
+        ;
+
+        
+    
+    
+            marker_6afbc6aa0cb8a8f08381267dd6bc5937.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_408a34f06f0ef3215d2505cdcdea96d3 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_0caadd3d0afa94750ab0096ac7d4310f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a97a8a2bb87701b623d34904908f3d3 = $(`<div id="html_9a97a8a2bb87701b623d34904908f3d3" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_0caadd3d0afa94750ab0096ac7d4310f.setContent(html_9a97a8a2bb87701b623d34904908f3d3);
+            
+        
+
+        marker_408a34f06f0ef3215d2505cdcdea96d3.bindPopup(popup_0caadd3d0afa94750ab0096ac7d4310f)
+        ;
+
+        
+    
+    
+            marker_408a34f06f0ef3215d2505cdcdea96d3.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f93dffbe7ad53fc166326f50bd996050 = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_fa0ddee946ae82f28fb587349749193e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e84637517d9635a1746f69e69e34165 = $(`<div id="html_1e84637517d9635a1746f69e69e34165" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_fa0ddee946ae82f28fb587349749193e.setContent(html_1e84637517d9635a1746f69e69e34165);
+            
+        
+
+        marker_f93dffbe7ad53fc166326f50bd996050.bindPopup(popup_fa0ddee946ae82f28fb587349749193e)
+        ;
+
+        
+    
+    
+            marker_f93dffbe7ad53fc166326f50bd996050.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d95384ec3bdf0b0453ff6e5d7ae35cc = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_c4ed176c068f5617bd49d532f0d25539 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec5671917fe10e2cbdca05be7a63b15b = $(`<div id="html_ec5671917fe10e2cbdca05be7a63b15b" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_c4ed176c068f5617bd49d532f0d25539.setContent(html_ec5671917fe10e2cbdca05be7a63b15b);
+            
+        
+
+        marker_6d95384ec3bdf0b0453ff6e5d7ae35cc.bindPopup(popup_c4ed176c068f5617bd49d532f0d25539)
+        ;
+
+        
+    
+    
+            marker_6d95384ec3bdf0b0453ff6e5d7ae35cc.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e759d8643e7b197c434b268bc203fdb6 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_15e81690492a3b90924bb5b6c89640b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f0f2a7a3e56ca6b2692bf513241871e = $(`<div id="html_7f0f2a7a3e56ca6b2692bf513241871e" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_15e81690492a3b90924bb5b6c89640b4.setContent(html_7f0f2a7a3e56ca6b2692bf513241871e);
+            
+        
+
+        marker_e759d8643e7b197c434b268bc203fdb6.bindPopup(popup_15e81690492a3b90924bb5b6c89640b4)
+        ;
+
+        
+    
+    
+            marker_e759d8643e7b197c434b268bc203fdb6.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f24330216ccba62b73abfbfa28afe6da = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_b645851e520f13fea3e15caacdc67cef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0adf41258c40e81513a6856a343885ce = $(`<div id="html_0adf41258c40e81513a6856a343885ce" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_b645851e520f13fea3e15caacdc67cef.setContent(html_0adf41258c40e81513a6856a343885ce);
+            
+        
+
+        marker_f24330216ccba62b73abfbfa28afe6da.bindPopup(popup_b645851e520f13fea3e15caacdc67cef)
+        ;
+
+        
+    
+    
+            marker_f24330216ccba62b73abfbfa28afe6da.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb1842b1cfd65d7f598221dc041f3c8e = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_f014e441b0de2eaaaa03cf9b1246f25e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c3b513c8d49325a5ccfd2b04ad37fa6 = $(`<div id="html_7c3b513c8d49325a5ccfd2b04ad37fa6" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_f014e441b0de2eaaaa03cf9b1246f25e.setContent(html_7c3b513c8d49325a5ccfd2b04ad37fa6);
+            
+        
+
+        marker_bb1842b1cfd65d7f598221dc041f3c8e.bindPopup(popup_f014e441b0de2eaaaa03cf9b1246f25e)
+        ;
+
+        
+    
+    
+            marker_bb1842b1cfd65d7f598221dc041f3c8e.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2671611a94afb28d337e06bb36f5add3 = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_c07b2cfd0133a67703ede79a4c034872 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc4930fbaad736ad698864f5d9ef8467 = $(`<div id="html_dc4930fbaad736ad698864f5d9ef8467" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_c07b2cfd0133a67703ede79a4c034872.setContent(html_dc4930fbaad736ad698864f5d9ef8467);
+            
+        
+
+        marker_2671611a94afb28d337e06bb36f5add3.bindPopup(popup_c07b2cfd0133a67703ede79a4c034872)
+        ;
+
+        
+    
+    
+            marker_2671611a94afb28d337e06bb36f5add3.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa53ca3f027f71cbfb7b95d59af214d7 = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_0c2df9441e5075b905243864a5726516 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7fdc0794ae0fd0e54d94ec5702c514d = $(`<div id="html_b7fdc0794ae0fd0e54d94ec5702c514d" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_0c2df9441e5075b905243864a5726516.setContent(html_b7fdc0794ae0fd0e54d94ec5702c514d);
+            
+        
+
+        marker_aa53ca3f027f71cbfb7b95d59af214d7.bindPopup(popup_0c2df9441e5075b905243864a5726516)
+        ;
+
+        
+    
+    
+            marker_aa53ca3f027f71cbfb7b95d59af214d7.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbe2345812d3687904120b1e6166694f = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_8c89c5e65f97dafc6a483b0b910c13a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f46d4da4c8457c91efa4b5a8477e294 = $(`<div id="html_9f46d4da4c8457c91efa4b5a8477e294" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_8c89c5e65f97dafc6a483b0b910c13a1.setContent(html_9f46d4da4c8457c91efa4b5a8477e294);
+            
+        
+
+        marker_bbe2345812d3687904120b1e6166694f.bindPopup(popup_8c89c5e65f97dafc6a483b0b910c13a1)
+        ;
+
+        
+    
+    
+            marker_bbe2345812d3687904120b1e6166694f.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31f3c452de87eee3bb2f7d5faa7c3de3 = L.marker(
+                [32.3182, -86.9023],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_80b3965a5b85d2fdbaf6df529cbff51b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e70b22d210560a1b3c95f258069c226 = $(`<div id="html_5e70b22d210560a1b3c95f258069c226" style="width: 100.0%; height: 100.0%;"><a href='http://adph.org/influenza/' target='_blank'>Alabama Flu Info</a></div>`)[0];
+                popup_80b3965a5b85d2fdbaf6df529cbff51b.setContent(html_5e70b22d210560a1b3c95f258069c226);
+            
+        
+
+        marker_31f3c452de87eee3bb2f7d5faa7c3de3.bindPopup(popup_80b3965a5b85d2fdbaf6df529cbff51b)
+        ;
+
+        
+    
+    
+            marker_31f3c452de87eee3bb2f7d5faa7c3de3.bindTooltip(
+                `<div>
+                     Alabama
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71d1e605033ff1386a0d78435813ce39 = L.marker(
+                [34.0489, -111.0937],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_f3d7621da38ef3ddacc42c257e301f60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fe810fbc3ce7f60532e340d58095e47 = $(`<div id="html_1fe810fbc3ce7f60532e340d58095e47" style="width: 100.0%; height: 100.0%;"><a href='http://www.azdhs.gov/phs/oids/epi/flu/index.htm' target='_blank'>Arizona Flu Info</a></div>`)[0];
+                popup_f3d7621da38ef3ddacc42c257e301f60.setContent(html_1fe810fbc3ce7f60532e340d58095e47);
+            
+        
+
+        marker_71d1e605033ff1386a0d78435813ce39.bindPopup(popup_f3d7621da38ef3ddacc42c257e301f60)
+        ;
+
+        
+    
+    
+            marker_71d1e605033ff1386a0d78435813ce39.bindTooltip(
+                `<div>
+                     Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3904ec9b59d2892cbe391e5fbb5e79c = L.marker(
+                [36.7783, -119.4179],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_0deda871bbe68e68e5c83a606fd91d90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0244406b7b3c268f5354c57e80f0b2a = $(`<div id="html_c0244406b7b3c268f5354c57e80f0b2a" style="width: 100.0%; height: 100.0%;"><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/Influenza.aspx' target='_blank'>California Flu Info</a></div>`)[0];
+                popup_0deda871bbe68e68e5c83a606fd91d90.setContent(html_c0244406b7b3c268f5354c57e80f0b2a);
+            
+        
+
+        marker_f3904ec9b59d2892cbe391e5fbb5e79c.bindPopup(popup_0deda871bbe68e68e5c83a606fd91d90)
+        ;
+
+        
+    
+    
+            marker_f3904ec9b59d2892cbe391e5fbb5e79c.bindTooltip(
+                `<div>
+                     California
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0eaf059a490b234d959529dfa9ce2963 = L.marker(
+                [27.9944, -81.7603],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_184ce62bc4b4bb8977f80918db8b7d9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_910f529d4e9a14290c8b22cf72b00dea = $(`<div id="html_910f529d4e9a14290c8b22cf72b00dea" style="width: 100.0%; height: 100.0%;"><a href='http://www.floridahealth.gov/diseases-and-conditions/influenza/index.html%20' target='_blank'>Florida Flu Info</a></div>`)[0];
+                popup_184ce62bc4b4bb8977f80918db8b7d9c.setContent(html_910f529d4e9a14290c8b22cf72b00dea);
+            
+        
+
+        marker_0eaf059a490b234d959529dfa9ce2963.bindPopup(popup_184ce62bc4b4bb8977f80918db8b7d9c)
+        ;
+
+        
+    
+    
+            marker_0eaf059a490b234d959529dfa9ce2963.bindTooltip(
+                `<div>
+                     Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c189d625de912d97db32fefcd6deeafa = L.marker(
+                [32.1656, -82.9001],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_cc7d404b23d604619a9a7cd2ef6d814e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3af69c309c57eb88ede9c7f5fdbd3322 = $(`<div id="html_3af69c309c57eb88ede9c7f5fdbd3322" style="width: 100.0%; height: 100.0%;"><a href='https://dph.georgia.gov/epidemiology/influenza/georgia-influenza-activity' target='_blank'>Georgia Flu Info</a></div>`)[0];
+                popup_cc7d404b23d604619a9a7cd2ef6d814e.setContent(html_3af69c309c57eb88ede9c7f5fdbd3322);
+            
+        
+
+        marker_c189d625de912d97db32fefcd6deeafa.bindPopup(popup_cc7d404b23d604619a9a7cd2ef6d814e)
+        ;
+
+        
+    
+    
+            marker_c189d625de912d97db32fefcd6deeafa.bindTooltip(
+                `<div>
+                     Georgia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7f75ba3eb3c5390472f8066c770c874 = L.marker(
+                [30.9843, -91.9623],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_b6c649debfefdf8022fec8239caa799b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17617cc20970329fbecb22277a7de83b = $(`<div id="html_17617cc20970329fbecb22277a7de83b" style="width: 100.0%; height: 100.0%;"><a href='https://ldh.la.gov/page/respiratory-home' target='_blank'>Louisiana Flu Info</a></div>`)[0];
+                popup_b6c649debfefdf8022fec8239caa799b.setContent(html_17617cc20970329fbecb22277a7de83b);
+            
+        
+
+        marker_a7f75ba3eb3c5390472f8066c770c874.bindPopup(popup_b6c649debfefdf8022fec8239caa799b)
+        ;
+
+        
+    
+    
+            marker_a7f75ba3eb3c5390472f8066c770c874.bindTooltip(
+                `<div>
+                     Louisiana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe365c8fb2555310bca5074684312f1b = L.marker(
+                [32.3547, -89.3985],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_0e036bf2237cdfb4a007a74c64c215ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b45bf53e78d14151424e045007498bd2 = $(`<div id="html_b45bf53e78d14151424e045007498bd2" style="width: 100.0%; height: 100.0%;"><a href='http://www.msdh.state.ms.us/msdhsite/_static/14%252c0%252c199%252c230.html' target='_blank'>Mississippi Flu Info</a></div>`)[0];
+                popup_0e036bf2237cdfb4a007a74c64c215ca.setContent(html_b45bf53e78d14151424e045007498bd2);
+            
+        
+
+        marker_fe365c8fb2555310bca5074684312f1b.bindPopup(popup_0e036bf2237cdfb4a007a74c64c215ca)
+        ;
+
+        
+    
+    
+            marker_fe365c8fb2555310bca5074684312f1b.bindTooltip(
+                `<div>
+                     Mississippi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec11af6448e6c6265af309526df3524c = L.marker(
+                [34.5199, -105.8701],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_01d4d7e0aba6086b2a4bb29ec09088bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77e62228f36630df77f35200bef35bd9 = $(`<div id="html_77e62228f36630df77f35200bef35bd9" style="width: 100.0%; height: 100.0%;"><a href='https://nmhealth.org/about/erd/ideb/isp/' target='_blank'>New Mexico Flu Info</a></div>`)[0];
+                popup_01d4d7e0aba6086b2a4bb29ec09088bd.setContent(html_77e62228f36630df77f35200bef35bd9);
+            
+        
+
+        marker_ec11af6448e6c6265af309526df3524c.bindPopup(popup_01d4d7e0aba6086b2a4bb29ec09088bd)
+        ;
+
+        
+    
+    
+            marker_ec11af6448e6c6265af309526df3524c.bindTooltip(
+                `<div>
+                     New Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0609758522eb931fa7275be4c17f754f = L.marker(
+                [31.9686, -99.9018],
+                {}
+            ).addTo(map_28136c971b82dad42fa75f4ef33c52af);
+        
+    
+        var popup_1e46ef8b042dd8ec683fd0b67cc946c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fd901273706e48b1bcf374c545411cc = $(`<div id="html_7fd901273706e48b1bcf374c545411cc" style="width: 100.0%; height: 100.0%;"><a href='http://www.dshs.state.tx.us/idcu/disease/influenza/surveillance/' target='_blank'>Texas Flu Info</a></div>`)[0];
+                popup_1e46ef8b042dd8ec683fd0b67cc946c5.setContent(html_7fd901273706e48b1bcf374c545411cc);
+            
+        
+
+        marker_0609758522eb931fa7275be4c17f754f.bindPopup(popup_1e46ef8b042dd8ec683fd0b67cc946c5)
+        ;
+
+        
+    
+    
+            marker_0609758522eb931fa7275be4c17f754f.bindTooltip(
+                `<div>
+                     Texas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
