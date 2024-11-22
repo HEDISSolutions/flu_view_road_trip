@@ -1,21 +1,21 @@
 'use strict';
 
-// Set the path to the CSV file (relative to the project root)
-const csvUrl = '../data/Path_to_Grandmas.csv';
 
+const csvUrl = 'data/filtered_route_to_grandmas.csv';
+;  // Adjust if necessary based on your project's directory structure
 
-// Initialize the map
-const myMap = L.map("map", {
-    center: [33.0, -90.0], // Centered on the Southern USA
-    zoom: 6,
+// Initialize the map on the "map" div
+const myMap = L.map('map', {
+    center: [33.0, -90.0], // Center coordinates on the Southern USA
+    zoom: 6,  // Initial zoom level
 });
 
-// Add a tile layer to the map
+// Add a base layer of tiles from OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(myMap);
 
-// Function to map activity levels to intensity
+// Function to convert activity levels to a numeric intensity for heatmap visualization
 function parseActivityLevel(activityLevel) {
     const levels = {
         "Minimal": 0.2,
@@ -24,14 +24,14 @@ function parseActivityLevel(activityLevel) {
         "High": 0.8,
         "Very High": 1.0,
     };
-    return levels[activityLevel] || 0.1; // Default intensity for unknown levels
+    return levels[activityLevel] || 0.1; // Default intensity for unknown or unspecified levels
 }
 
-// Fetch and process the CSV file
+// Fetch the CSV data using d3.csv if you have d3 loaded, or use another method if d3 is not included
 d3.csv(csvUrl).then(data => {
-    const heatmapData = []; // Array to store heatmap points
+    const heatmapData = [];
 
-    // State coordinates 
+    // Define coordinates for each state to use in the heatmap
     const stateCoordinates = {
         "Alabama": [32.3182, -86.9023],
         "Mississippi": [32.3547, -89.3985],
@@ -43,24 +43,24 @@ d3.csv(csvUrl).then(data => {
         "California": [36.7783, -119.4179],
     };
 
-    // Process each row in the CSV data
+    // Process each row in the CSV to prepare the data for the heatmap
     data.forEach(row => {
-        const state = row.State; // Extract state name
-        const activityLevel = row["Activity Level"]; // Extract activity level
-        const coordinates = stateCoordinates[state]; // Get coordinates for the state
+        const state = row.State;
+        const activityLevel = row["Activity Level"];
+        const coordinates = stateCoordinates[state];
 
         if (coordinates) {
-            const intensity = parseActivityLevel(activityLevel); // Map activity level to intensity
-            heatmapData.push([...coordinates, intensity]); // Add point to heatmap data
+            const intensity = parseActivityLevel(activityLevel);
+            heatmapData.push([...coordinates, intensity]);  // Append the data point [lat, lng, intensity] to the array
         }
     });
 
-    // Add the heatmap layer to the map
+    // Create and add the heatmap layer to the map
     L.heatLayer(heatmapData, {
-        radius: 25,     // Radius of heatmap points
-        blur: 15,       // Smoothing of the heatmap
-        maxZoom: 10,    // Maximum zoom level for the heatmap
-        gradient: {     // Gradient for intensity levels
+        radius: 25,
+        blur: 15,
+        maxZoom: 10,
+        gradient: {
             0.2: "yellow",
             0.4: "orange",
             0.6: "red",
