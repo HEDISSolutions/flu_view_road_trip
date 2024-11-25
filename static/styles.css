@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +7,29 @@ body {
 }
 
 #map {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  margin: 0;
+  position: relative;
+}
+
+.legend {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgb(119, 175, 234);
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+}
+
+.legend span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
