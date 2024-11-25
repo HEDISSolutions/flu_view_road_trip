@@ -1,20 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-us">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filtered Route Heatmap</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Road Trip to Grandmas</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
-</head>
-<body>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      html, body, #map {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #mapTitle {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px 20px;
+        z-index: 1000;
+        border-radius: 8px;
+      }
+
+      #weekSelector {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+      }
+
+      #legend {
+        position: absolute;
+        bottom: 30px; /* Adjust distance from the bottom */
+        right: 30px; /* Adjust distance from the right */
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 14px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+
+      #legend h4 {
+        margin: 0 0 10px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      #legend i {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        border-radius: 3px;
+      }
+
+      .legend-blue {
+        background: blue;
+      }
+
+      .legend-cyan {
+        background: cyan;
+      }
+
+      .legend-lime {
+        background: lime;
+      }
+
+      .legend-yellow {
+        background: yellow;
+      }
+
+      .legend-red {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mapTitle">Road Trip to Grandmas</div>
+    <select id="weekSelector">
+      <option value="2024-03-09">March 9, 2024</option>
+      <option value="2024-03-16">March 16, 2024</option>
+      <option value="2024-03-23">March 23, 2024</option>
+      <option value="2024-03-30">March 30, 2024</option>
+      <option value="2024-04-06">April 6, 2024</option>
+      <option value="2024-04-13">April 13, 2024</option>
+      <option value="2024-04-20">April 20, 2024</option>
+      <option value="2024-04-27">April 27, 2024</option>
+      <option value="2024-05-04">May 4, 2024</option>
+    </select>
     <div id="map"></div>
-    <script src="/static/js/script.js"></script>
-</body>
+    <div id="legend">
+      <h4>ACUITY LEVEL</h4>
+      <div><i class="legend-blue"></i> Minimal (1-3)</div>
+      <div><i class="legend-cyan"></i> Low (4-5)</div>
+      <div><i class="legend-lime"></i> Moderate (6-7)</div>
+      <div><i class="legend-yellow"></i> High (8-10)</div>
+      <div><i class="legend-red"></i> Very High (>10)</div>
+    </div>
+    <script src="./static/heatmap.js"></script>
+  </body>
 </html>
-
-
-
