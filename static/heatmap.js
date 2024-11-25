@@ -3,7 +3,7 @@
 // Initialize map
 let myMap = L.map("map", {
   center: [33.0, -90.0],
-  zoom: 7,
+  zoom: 6,
 });
 
 // Base map layers
@@ -33,141 +33,117 @@ L.control
   )
   .addTo(myMap);
 
-let heatLayer; // To store the heatmap layer
+// Store heatmap layer for dynamic updates
+let heatLayer;
 
-// Function to update heatmap and bind city information
-function updateHeatmapAndInteractions(selectedWeek) {
-  const fileName = `./data/week_${selectedWeek.replace(/\//g, "-")}.csv`;
-  console.log("Loading heatmap file:", fileName);
-
-  d3.csv(fileName).then(function (data) {
-    let heatArray = [];
-
-    // Remove previous heatmap circles
-    myMap.eachLayer(function (layer) {
-      if (layer instanceof L.Circle) {
-        myMap.removeLayer(layer);
-      }
-    });
-
-    data.forEach(function (row) {
-      let latitude = parseFloat(row["Latitude"]);
-      let longitude = parseFloat(row["Longitude"]);
-      let acuityLevel = parseFloat(row["ACUITY_LEVEL"]);
-      let cityName = row["CBSA_NAME"];
-
-      if (!isNaN(latitude) && !isNaN(longitude) && !isNaN(acuityLevel) && cityName) {
-        heatArray.push([latitude, longitude, acuityLevel]);
-
-        // Add circle for heatmap hover interaction
-        let circle = L.circle([latitude, longitude], {
-          radius: 50,
-          fillOpacity: 0,
-        }).addTo(myMap);
-
-        circle.bindPopup(
-          `<h1>${cityName.toLocaleString()}</h1><p>ACUITY_LEVEL: ${acuityLevel.toLocaleString()}</p><p>Week: ${selectedWeek}</p>`
-        );
-      }
-    });
-
-    // Update heatmap layer
-    if (heatLayer) {
-      myMap.removeLayer(heatLayer);
-    }
-
-    heatLayer = L.heatLayer(heatArray, {
-      radius: 25,
-      blur: 15,
-      maxZoom: 10,
-      gradient: {
-        0.4: "blue",
-        0.6: "cyan",
-        0.7: "lime",
-        0.8: "yellow",
-        1.0: "red",
-      },
-    }).addTo(myMap);
-
-    console.log("Heatmap updated.");
-  });
+// Function to determine activity level labels
+function getActivityLevelLabel(activityLevel) {
+  if (activityLevel <= 3) return "Minimal";
+  else if (activityLevel <= 5) return "Low";
+  else if (activityLevel <= 7) return "Moderate";
+  else if (activityLevel <= 10) return "High";
+  else return "Very High";
 }
 
-// Function to update scenic site markers
-function updateScenicMarkers() {
-  const fileName = "./data/scenic_sites_itinerary.csv";
-  console.log("Loading scenic sites from file:", fileName);
+// Function to update the heatmap and interactions
+function updateHeatmapAndInteractions(selectedWeek) {
+  const weekToFileMap = {
+    "2024-03-09": "./data/week_10.csv",
+    "2024-03-16": "./data/week_11.csv",
+    "2024-03-23": "./data/week_12.csv",
+    "2024-03-30": "./data/week_13.csv",
+    "2024-04-06": "./data/week_14.csv",
+    "2024-04-13": "./data/week_15.csv",
+    "2024-04-20": "./data/week_16.csv",
+    "2024-04-27": "./data/week_17.csv",
+    "2024-05-04": "./data/week_18.csv",
+  };
+
+  const fileName = weekToFileMap[selectedWeek];
+  if (!fileName) {
+    console.error("Invalid week selected or file mapping not found:", selectedWeek);
+    return;
+  }
+
+  console.log("Loading heatmap file:", fileName);
 
   d3.csv(fileName)
     .then(function (data) {
       if (!data || data.length === 0) {
-        console.error("No data found in the CSV file.");
+        console.error("No data found in the CSV file:", fileName);
         return;
       }
 
-      data.forEach(function (row, index) {
-        console.log(`Processing row ${index + 1}:`, row);
+      let heatArray = [];
 
-        let sight = row["SIGHTS"];
-        let latitude = parseFloat(row["Latitude"]);
-        let longitude = parseFloat(row["Longitude"]);
-        let start = row["Start"];
-        let finish = row["Finish"];
-
-        if (!sight) {
-          console.warn(`Missing 'SIGHTS' in row ${index + 1}`);
-          return;
+      // Remove previous heatmap and circle layers
+      myMap.eachLayer(function (layer) {
+        if (layer instanceof L.Circle || layer === heatLayer) {
+          myMap.removeLayer(layer);
         }
-
-        if (isNaN(latitude) || isNaN(longitude)) {
-          console.warn(`Invalid coordinates in row ${index + 1}`);
-          return;
-        }
-
-        let markerOptions = { draggable: false };
-
-        if (sight === "Los Angeles") {
-          markerOptions.icon = L.icon({
-            iconUrl: "./static/green-marker.png",
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [0, -41],
-          });
-        } else if (sight === "Miami Beach") {
-          markerOptions.icon = L.icon({
-            iconUrl: "./static/red-marker.png",
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [0, -41],
-          });
-        }
-
-        let marker = L.marker([latitude, longitude], markerOptions).addTo(myMap);
-
-        let popupContent = `<h1>${sight.toLocaleString()}</h1>`;
-        if (sight === "Los Angeles") {
-          popupContent += `<p>Start: ${start ? start.toLocaleString() : "N/A"}</p>`;
-        } else if (sight === "Miami Beach") {
-          popupContent += `<p>Finish: ${finish ? finish.toLocaleString() : "N/A"}</p>`;
-        }
-
-        marker.bindPopup(popupContent);
       });
 
-      console.log("Scenic site markers added successfully.");
+      // Process data
+      data.forEach(function (row, index) {
+        let latitude = parseFloat(row["Latitude"]);
+        let longitude = parseFloat(row["Longitude"]);
+        let acuityLevel = parseFloat(row["ACUITY_LEVEL"]);
+        let cityName = row["CBSA_NAME"];
+
+        if (!isNaN(latitude) && !isNaN(longitude) && !isNaN(acuityLevel) && cityName) {
+          heatArray.push([latitude, longitude, acuityLevel]);
+
+          // Add interactive circle
+          let circle = L.circle([latitude, longitude], {
+            radius: 120, // Larger radius for better interaction
+            color: "blue",
+            fillColor: "cyan",
+            fillOpacity: 0.3,
+          }).addTo(myMap);
+
+          // Bind popup with formatted data
+          circle.bindPopup(
+            `<div style="font-size: 14px; line-height: 1.5;">
+              <h3 style="margin: 0;">${cityName.toLocaleString()}</h3>
+              <p><strong>Acuity Level:</strong> ${acuityLevel.toLocaleString()}</p>
+              <p><strong>Activity Level:</strong> ${getActivityLevelLabel(acuityLevel)}</p>
+              </div>`,
+            { autoPan: true }
+          );
+        }
+      });
+
+      // Add enhanced heatmap layer
+      if (heatLayer) {
+        myMap.removeLayer(heatLayer);
+      }
+
+      heatLayer = L.heatLayer(heatArray, {
+        radius: 22, // Bigger radius for stronger heatmap impact
+        blur: 30, // Increased blur for smoother transitions
+        maxZoom: 8, // Reduce max zoom to prevent overly dense visualization
+        gradient: {
+          0.3: "blue",
+          0.5: "cyan",
+          0.7: "lime",
+          0.9: "yellow",
+          1.0: "red",
+        },
+      }).addTo(myMap);
+
+      console.log("Heatmap updated with enhanced blur and radius.");
     })
-    .catch((error) => {
-      console.error("Error loading scenic sites:", error);
+    .catch(function (error) {
+      console.error("Error loading heatmap data:", error);
     });
 }
 
-// Initial load
-const initialWeek = document.getElementById("weekSelector").value;
-updateHeatmapAndInteractions(initialWeek);
-updateScenicMarkers();
-
-// Event listener for dropdown change
+// Event listener for dropdown menu
 document.getElementById("weekSelector").addEventListener("change", function (event) {
   const selectedWeek = event.target.value;
   updateHeatmapAndInteractions(selectedWeek);
 });
+
+// Initial load
+const initialWeek = document.getElementById("weekSelector").value;
+updateHeatmapAndInteractions(initialWeek);
