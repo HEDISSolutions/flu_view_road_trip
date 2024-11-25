@@ -1,0 +1,142 @@
+CBSA_NAME,ACUITY_LEVEL,ACTIVITY_LEVEL_LABEL,WEEK,Latitude,Longitude
+"Alamogordo, NM",3,Minimal,18,32.8995325,-105.960265
+"Albertville, AL",1,Minimal,18,34.2675937,-86.2088669
+"Albuquerque, NM",5,Low,18,35.0843859,-106.650422
+"Alexander City, AL",1,Minimal,18,32.944012,-85.9538532
+"Alexandria, LA",1,Minimal,18,31.3112936,-92.4451371
+"Anniston-Oxford-Jacksonville, AL",3,Minimal,18,33.8137125,-85.7613536
+"Arcadia, FL",2,Minimal,18,27.2158826,-81.8584164
+"Atmore, AL",2,Minimal,18,31.0237921,-87.4938708
+"Auburn-Opelika, AL",1,Minimal,18,32.637656,-85.3836481
+"Austin-Round Rock, TX",1,Minimal,18,30.5082551,-97.678896
+"Baton Rouge, LA",1,Minimal,18,30.4514677,-91.1871466
+"Birmingham-Hoover, AL",1,Minimal,18,33.4053867,-86.8113781
+"Bogalusa, LA",1,Minimal,18,30.7910204,-89.8486858
+"Brownsville-Harlingen, TX",1,Minimal,18,26.1906306,-97.6961026
+"Brownwood, TX",1,Minimal,18,31.7093197,-98.9911611
+"Cape Coral-Fort Myers, FL",6,Moderate,18,26.5605279,-81.9274896
+"Carlsbad-Artesia, NM",2,Minimal,18,32.4170622,-104.4723301
+"Clewiston, FL",1,Minimal,18,26.7542312,-80.9336753
+"Clovis, NM",4,Low,18,34.4047987,-103.2052272
+"College Station-Bryan, TX",3,Minimal,18,30.825147,-96.4929797
+"Columbus, GA-AL",2,Minimal,18,32.4609764,-84.9877094
+"Crestview-Fort Walton Beach-Destin, FL",1,Minimal,18,30.3935337,-86.4957833
+"Cullman, AL",2,Minimal,18,34.1748208,-86.8436124
+"Dallas-Fort Worth-Arlington, TX",2,Minimal,18,32.735687,-97.1080656
+"Daphne-Fairhope-Foley, AL",1,Minimal,18,30.4065868,-87.6835974
+"Decatur, AL",1,Minimal,18,34.6059253,-86.9833417
+"Deltona-Daytona Beach-Ormond Beach, FL",3,Minimal,18,29.0396219,-81.2518833
+"Deming, NM",1,Minimal,18,32.2686981,-107.7586404
+"DeRidder, LA",1,Minimal,18,30.8463055,-93.2890527
+"Dothan, AL",1,Minimal,18,31.2233594,-85.389326
+"El Centro, CA",1,Minimal,18,32.792,-115.5630514
+"El Paso, TX",1,Minimal,18,31.7618778,-106.4850217
+"Enterprise, AL",1,Minimal,18,31.3151708,-85.8552161
+"EspaÃ±ola, NM",1,Minimal,18,34.9727305,-105.0323635
+"Eufaula, AL-GA",2,Minimal,18,31.8912717,-85.1454876
+"Farmington, NM",1,Minimal,18,36.7280583,-108.2186856
+"Flagstaff, AZ",1,Minimal,18,35.1982836,-111.651302
+"Florence-Muscle Shoals, AL",1,Minimal,18,34.7448112,-87.6675292
+"Fort Payne, AL",1,Minimal,18,34.4442547,-85.7196893
+"Fort Polk South, LA",1,Minimal,18,31.0464824,-93.2048005
+"Fresno, CA",3,Minimal,18,36.7377981,-119.7871247
+"Gadsden, AL",1,Minimal,18,34.014264,-86.0066386
+"Gainesville, FL",1,Minimal,18,29.6519563,-82.324998
+"Grants, NM",2,Minimal,18,35.14726,-107.8514466
+"Hammond, LA",1,Minimal,18,30.5043583,-90.4611995
+"Hanford-Corcoran, CA",1,Minimal,18,36.3274502,-119.6456844
+"Hobbs, NM",1,Minimal,18,32.7026116,-103.1360403
+"Homosassa Springs, FL",1,Minimal,18,28.8037059,-82.5761369
+"Houma-Thibodaux, LA",1,Minimal,18,29.6014226,-90.7532809
+"Houston-The Woodlands-Sugar Land, TX",1,Minimal,18,30.1657654,-95.461132
+"Huntsville, AL",3,Minimal,18,34.7303688,-86.5861037
+"Huntsville, TX",1,Minimal,18,30.7235263,-95.5507771
+"Jacksonville, FL",3,Minimal,18,30.3321838,-81.655651
+"Key West, FL",1,Minimal,18,24.5550593,-81.7799871
+"Killeen-Temple, TX",1,Minimal,18,31.1241507,-97.6982272
+"Lafayette, LA",2,Minimal,18,30.2240897,-92.0198427
+"Lake Charles, LA",1,Minimal,18,30.2265949,-93.2173758
+"Lake City, FL",2,Minimal,18,30.1893883,-82.6394016
+"Lake Havasu City-Kingman, AZ",1,Minimal,18,35.2143346,-113.7632828
+"Lakeland-Winter Haven, FL",1,Minimal,18,28.0222435,-81.7328567
+"Laredo, TX",1,Minimal,18,27.5035613,-99.5075519
+"Las Cruces, NM",3,Minimal,18,32.3199396,-106.7636538
+"Las Vegas, NM",3,Minimal,18,35.5942137,-105.2227978
+"Longview, TX",1,Minimal,18,32.5007037,-94.7404891
+"Los Alamos, NM",1,Minimal,18,35.8800364,-106.3031138
+"Los Angeles-Long Beach-Anaheim, CA",4,Low,18,33.8726016,-118.2848067
+"Madera, CA",1,Minimal,18,36.9613356,-120.0607176
+"McAllen-Edinburg-Mission, TX",1,Minimal,18,26.2336971,-98.1775638
+"Miami-Fort Lauderdale-West Palm Beach, FL",1,Minimal,18,26.7144532,-80.0549456
+"Mobile, AL",2,Minimal,18,30.6953657,-88.0398912
+"Modesto, CA",2,Minimal,18,37.6392595,-120.9970014
+"Monroe, LA",3,Minimal,18,32.5093109,-92.1193012
+"Montgomery, AL",5,Low,18,32.3792233,-86.3077368
+"Morgan City, LA",1,Minimal,18,29.6993748,-91.20677
+"Napa, CA",3,Minimal,18,38.2975381,-122.286865
+"Naples-Immokalee-Marco Island, FL",1,Minimal,18,25.9397412,-81.7075355
+"Natchez, MS-LA",1,Minimal,18,31.5604442,-91.403171
+"Natchitoches, LA",1,Minimal,18,31.7607195,-93.0862749
+"New Orleans-Metairie, LA",1,Minimal,18,30.0019543,-90.1633887
+"Nogales, AZ",1,Minimal,18,31.3403775,-110.9342532
+"North Port-Sarasota-Bradenton, FL",1,Minimal,18,27.3959334,-82.5185837
+"Ocala, FL",1,Minimal,18,29.1871986,-82.1400923
+"Okeechobee, FL",1,Minimal,18,27.2439349,-80.8297828
+"Opelousas, LA",1,Minimal,18,30.5335302,-92.081509
+"Orlando-Kissimmee-Sanford, FL",2,Minimal,18,28.5828156,-81.3399414
+"Ozark, AL",2,Minimal,18,31.459017,-85.640289
+"Palatka, FL",1,Minimal,18,29.6485801,-81.6375819
+"Palm Bay-Melbourne-Titusville, FL",1,Minimal,18,28.263933,-80.7214417
+"Panama City, FL",2,Minimal,18,30.1588129,-85.6602058
+"Payson, AZ",6,Moderate,18,34.2308684,-111.3251355
+"Pecos, TX",1,Minimal,18,31.4229124,-103.4932293
+"Pensacola-Ferry Pass-Brent, FL",1,Minimal,18,30.4688079,-87.2360826
+"Phoenix-Mesa-Scottsdale, AZ",4,Low,18,33.4982289,-112.2384017
+"Portales, NM",1,Minimal,18,34.1861922,-103.3343978
+"Port St. Lucie, FL",2,Minimal,18,27.2730492,-80.3582261
+"Prescott, AZ",1,Minimal,18,34.5400242,-112.4685025
+"Punta Gorda, FL",1,Minimal,18,26.9297836,-82.0453664
+"Raymondville, TX",1,Minimal,18,26.4814565,-97.783051
+"Rio Grande City, TX",3,Minimal,18,26.3797874,-98.8203046
+"Riverside-San Bernardino-Ontario, CA",1,Minimal,18,34.9592083,-116.419389
+"Roswell, NM",1,Minimal,18,33.3942528,-104.5226958
+"Ruidoso, NM",3,Minimal,18,33.3338601,-105.6813321
+"Ruston, LA",1,Minimal,18,32.5232053,-92.637927
+"Sacramento--Roseville--Arden-Arcade, CA",4,Low,18,38.6008071,-121.3770336
+"Safford, AZ",1,Minimal,18,32.8339546,-109.70758
+"Salinas, CA",1,Minimal,18,36.6777372,-121.6555013
+"San Angelo, TX",1,Minimal,18,31.4637723,-100.4370375
+"San Antonio-New Braunfels, TX",1,Minimal,18,29.4249213,-98.4930675
+"San Diego-Carlsbad, CA",1,Minimal,18,33.1580933,-117.3505939
+"San Francisco-Oakland-Hayward, CA",4,Low,18,37.6687665,-122.0809964
+"San Jose-Sunnyvale-Santa Clara, CA",3,Minimal,18,37.36883,-122.0363496
+"Santa Cruz-Watsonville, CA",9,High,18,36.910231,-121.7568946
+"Santa Fe, NM",2,Minimal,18,35.6869752,-105.937799
+"Santa Maria-Santa Barbara, CA",1,Minimal,18,34.9530337,-120.4357191
+"Santa Rosa, CA",6,Moderate,18,38.440429,-122.7140548
+"Scottsboro, AL",1,Minimal,18,34.6723069,-86.0341463
+"Sebastian-Vero Beach, FL",2,Minimal,18,27.6386434,-80.3972736
+"Sebring, FL",1,Minimal,18,27.495592,-81.440907
+"Selma, AL",1,Minimal,18,32.4073589,-87.0211007
+"Sherman-Denison, TX",1,Minimal,18,33.6704808,-96.6101496
+"Show Low, AZ",1,Minimal,18,34.2542084,-110.0298327
+"Shreveport-Bossier City, LA",7,Moderate,18,32.5159852,-93.7321228
+"Sierra Vista-Douglas, AZ",1,Minimal,18,31.828458,-109.949686
+"Silver City, NM",1,Minimal,18,32.770075,-108.280326
+"Sonora, CA",2,Minimal,18,37.9829496,-120.3821724
+"Stockton-Lodi, CA",3,Minimal,18,38.1400398,-121.2689599
+"Talladega-Sylacauga, AL",1,Minimal,18,33.1731716,-86.2516406
+"Tallahassee, FL",3,Minimal,18,30.4381828,-84.2806235
+"Tampa-St. Petersburg-Clearwater, FL",2,Minimal,18,28.274347,-82.3885783
+"Taos, NM",1,Minimal,18,36.4072134,-105.5733788
+"The Villages, FL",3,Minimal,18,28.927019,-82.0037608
+"Troy, AL",6,Moderate,18,31.8087678,-85.969951
+"Tucson, AZ",1,Minimal,18,32.2539787,-110.9741769
+"Tuscaloosa, AL",2,Minimal,18,33.2098407,-87.5691735
+"Vallejo-Fairfield, CA",4,Low,18,38.2562125,-121.9280928
+"Valley, AL",1,Minimal,18,32.8187406,-85.1793852
+"Victoria, TX",1,Minimal,18,28.8052674,-97.0035982
+"Waco, TX",1,Minimal,18,31.549333,-97.1466695
+"Wauchula, FL",1,Minimal,18,27.5472589,-81.8114715
+"Yuba City, CA",1,Minimal,18,39.1406607,-121.6177394
+"Yuma, AZ",1,Minimal,18,32.6926512,-114.6276916
