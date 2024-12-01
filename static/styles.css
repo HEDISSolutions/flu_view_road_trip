@@ -1,0 +1,108 @@
+/* Reset default margins and padding */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Map container styling */
+#map {
+  height: 100vh; /* Takes up most of the viewport height */
+  width: 100%; /* Full-width map */
+}
+
+/* Title styling for the heat map project */
+#mapTitle {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  z-index: 1000;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Dropdown menu styling */
+#weekSelector {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Dropdown hover effect */
+#weekSelector:hover {
+  border-color: #888;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  background-color: #f9f9f9;
+}
+
+/* Rotated diamond styling for markers */
+.rotated-scaled-diamond {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg); /* Rotates square into diamond shape */
+  transform-origin: center;
+  background-color: steelblue;
+  border: 1px solid #000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Popup styling for markers */
+.leaflet-popup-content {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+}
+
+.leaflet-popup-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Custom heatmap layer styles */
+.leaflet-heatmap-layer {
+  opacity: 0.8; /* Makes the heatmap slightly transparent */
+}
+
+/* Tooltip styling for better visibility */
+.leaflet-tooltip {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Interactive circle markers */
+.leaflet-interactive {
+  transition: fill-opacity 0.3s ease, stroke-opacity 0.3s ease;
+}
+
+.leaflet-interactive:hover {
+  fill-opacity: 0.6;
+  stroke-opacity: 0.8;
+}

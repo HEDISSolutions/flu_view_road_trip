@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Heat Map Project</title>
+    <link rel="stylesheet" href="./static/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100vh;
+        width: 100%;
+      }
+      #mapTitle {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        z-index: 1000;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      #weekSelector {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: white;
+      }
+      #legend {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1000;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgb(250, 250, 247);
+        opacity: 0.9;
+    }
+
+    .legend-item i {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        border-radius: 3px;
+    }
+
+    .legend-blue { background: blue; }
+    .legend-cyan { background: cyan; }
+    .legend-lime { background: lime; }
+    .legend-yellow { background: yellow; }
+    .legend-red { background: red; }
+
+    </style>
+
+  </head>
+  <body>
+    <div id="mapTitle">ROAD TRIP TO GRANDMAS</div>
+
+    <select id="weekSelector">
+      <option value="2024-03-09">March 9, 2024</option>
+      <option value="2024-03-16">March 16, 2024</option>
+      <option value="2024-03-23">March 23, 2024</option>
+      <option value="2024-03-30">March 30, 2024</option>
+      <option value="2024-04-06">April 6, 2024</option>
+      <option value="2024-04-13">April 13, 2024</option>
+      <option value="2024-04-20">April 20, 2024</option>
+      <option value="2024-04-27">April 27, 2024</option>
+      <option value="2024-05-04">May 4, 2024</option>
+    </select>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+
+     <!-- Legend -->
+     <div id="legend">
+      <strong>ACUITY LEVEL</strong>
+      <div class="legend-item"><i class="legend-blue"></i> Minimal (1-3)</div>
+      <div class="legend-item"><i class="legend-cyan"></i> Low (4-5)</div>
+      <div class="legend-item"><i class="legend-lime"></i> Moderate (6-7)</div>
+      <div class="legend-item"><i class="legend-yellow"></i> High (8-10)</div>
+      <div class="legend-item"><i class="legend-red"></i> Very High (&gt;10)</div>
+  </div>
+  
+ 
+    </script>
+    <script src="./static/heatmap.js"></script>
+  </body>
+</html>
