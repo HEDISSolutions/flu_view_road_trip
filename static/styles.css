@@ -8,7 +8,11 @@ html, body {
 
 /* Map container styling */
 #map {
+<<<<<<< HEAD
   height: 100vh; /* Takes up most of the viewport height */
+=======
+  height: 100vh; /* Takes up most of the viewport height */
+>>>>>>> 85226f1429111a9e35120782c9f24baa65aebac6
   width: 100%; /* Full-width map */
 }
 
