@@ -73,6 +73,88 @@ function updateScenicLandmarks() {
   });
 
   console.log("Scenic landmarks added successfully.");
+
+  const fileName = "./data/scenic_sites_itinerary.csv";
+  console.log("Loading scenic landmarks from file:", fileName);
+
+  d3.csv(fileName)
+    .then(function (data) {
+      if (!data || data.length === 0) {
+        console.error("No data found in the CSV file:", fileName);
+        return;
+      }
+
+      data.forEach(function (row) {
+        const latitude = parseFloat(row["Latitude"]);
+        const longitude = parseFloat(row["Longitude"]);
+        const sight = row["SIGHTS"];
+        const activityLevel = parseFloat(row["ACTIVITY_LEVEL"]);
+
+        if (!isNaN(latitude) && !isNaN(longitude) && sight && !isNaN(activityLevel)) {
+          // Determine diamond color and rotation
+          if (!isNaN(latitude) && !isNaN(longitude) && sight && !isNaN(activityLevel)) {
+            // Determine diamond color and rotation
+            let color = "steelblue";
+            let rotateTransform = "rotate(45deg)";
+            let message = "";
+
+            if (sight === "Los Angeles") {
+              color = "green";
+              rotateTransform = "rotate3d(0, 1, 0.5, 3.142rad)";
+              message = `<h3>START HERE!</h3>`;
+            } else if (sight === "Grandma's House") {
+              color = "red";
+              rotateTransform = "rotate3d(0, 1, 0.5, 3.142rad)";
+              message = `<h3>GRANDMA'S HOUSE!</h3>`;
+            } else {
+              message = `<h3>${sight}</h3>`;
+            }
+          }
+
+          // Create diamond marker using CSS-based SVG
+          const diamondMarker = L.divIcon({
+            className: "rotated-scaled-diamond",
+            html: `<div style="
+              width: calc(100px * cos(45deg));
+              height: calc(100px * cos(45deg));
+              margin: calc(100px / 4 * cos(45deg));
+              transform: ${rotateTransform};
+              transform-origin: center;
+              background-color: ${color};
+            "></div>`,
+            iconSize: [50, 50],
+            iconAnchor: [25, 25],
+          });
+
+          const marker = L.marker([latitude, longitude], { icon: diamondMarker });
+
+          // Determine activity label and message
+          const activityLabel = getActivityLevelLabel(activityLevel);
+          const message =
+            activityLevel <= 6
+              ? "YES WE CAN!"
+              : "We need to think of Grandma!";
+
+          // Bind popup with dynamic content
+          marker.bindPopup(
+            `<div style="font-size: 16px; font-weight: bold; text-align: center;">
+              <h3>${sight}</h3>
+              <p><strong>Activity Level:</strong> ${activityLabel}</p>
+              <p>${message}</p>
+            </div>`,
+            { autoPan: true }
+          );
+
+          marker.addTo(myMap);
+        } else {
+          console.warn(`Invalid data for row ${index + 1}:`, row);
+        }
+      });
+
+      console.log("Scenic landmarks added successfully.");
+    })
+    .catch((error) => console.error("Error loading scenic landmarks data:", error));
+
 }
 
 // Function to update the heatmap and interactions
