@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flu Trends Heatmap</title>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" integrity="sha384-NVUymcJWjl+zDnZso0hpP7G8tHk1YXfKytBomDf1XsMb0ll5fZLQDeZwYnLU4X6p" crossorigin="">
+</head>
+<body>
+    <header>
+        <h1>Sneeze-Free Zones</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trend_line.html">Trend Line</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Added filters for real-time filtering -->
+    <div id="filters">
+        <label for="state-filter">State:</label>
+        <select id="state-filter">
+            <!-- Options dynamically populated -->
+        </select>
+
+        <label for="date-filter">Date:</label>
+        <input type="date" id="date-filter">
+
+        <label for="strain-filter">Flu Strain:</label>
+        <select id="strain-filter">
+            <!-- Options dynamically populated -->
+        </select>
+
+        <button id="apply-filters">Apply Filters</button>
+    </div>
+
+    <!-- Map Container -->
+    <div id="map-container">
+        <h2>Flu Cases Heatmap</h2>
+        <div id="map"></div>
+    </div>
+
+    <!-- Added button for data export -->
+    <div id="export">
+        <button id="export-csv">Download CSV</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js" integrity="sha384-bVq5p9WA4zMDB6eM7QCXx1CSebHh51Q5S2Hf/1cvH+tvDySUH+L3KB0GDrRy8D1s" crossorigin=""></script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

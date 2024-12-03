@@ -8,11 +8,7 @@ html, body {
 
 /* Map container styling */
 #map {
-<<<<<<< HEAD
   height: 100vh; /* Takes up most of the viewport height */
-=======
-  height: 100vh; /* Takes up most of the viewport height */
->>>>>>> 85226f1429111a9e35120782c9f24baa65aebac6
   width: 100%; /* Full-width map */
 }
 
@@ -109,4 +105,73 @@ html, body {
 .leaflet-interactive:hover {
   fill-opacity: 0.6;
   stroke-opacity: 0.8;
+}
+
+/* New Header Styling */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Styled the filters section */
+#filters {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+#filters label, #filters select, #filters input {
+  margin-right: 1rem;
+}
+
+/* Map Container */
+#map-container {
+  height: 80vh;
+  margin: 1rem auto;
+  width: 90%;
+  border: 1px solid #ccc;
+}
+
+/* Styled the map */
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+/* Styled the export section */
+#export {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Button Styling */
+button {
+  background-color: #2980b9;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+button:hover {
+  background-color: #3498db;
 }

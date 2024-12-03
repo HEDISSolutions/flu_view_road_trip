@@ -1,0 +1,38 @@
+#Importing Libraries
+import sqlite3
+import pandas as pd
+#Read CSV file into a Dataframe
+file_path = '../data/ILINet.csv'
+data = pd.read_csv(file_path)
+
+data
+data.drop(columns = ["REGION TYPE", "REGION", "AGE 25-64"])
+#Rename and reorganize columns of the DataFrame
+renamed_data = data.rename(columns={"YEAR":"Year", 
+                                         "WEEK":"Week", 
+                                         "% WEIGHTED ILI":"Adjusted Percent of Population Sick",
+                                         "%UNWEIGHTED ILI":"Unweighted Percent of Population Sick", 
+                                         "AGE 0-4":"Ages 0-4",
+                                         "AGE 25-49":"Ages 25-49",
+                                         "AGE 5-24":"Ages 5-24",
+                                         "AGE 50-64":"Ages 50-64",
+                                         "AGE 65":"Ages 65+",
+                                         "ILITOTAL":"Influenza Totals", 
+                                         "NUM. OF PROVIDERS":"Number of Providers", 
+                                            })
+organized_data = renamed_data[["Year", 
+                                   "Week",  
+                                   "Ages 0-4", 
+                                   "Ages 5-24", 
+                                   "Ages 25-49",
+                                  "Ages 50-64",
+                                  "Ages 65+",
+                                  "Number of Providers", 
+                                  "Influenza Totals",
+                                  "Adjusted Percent of Population Sick",
+                                  "Unweighted Percent of Population Sick", 
+                                  ]]
+organized_data.head()
+organized_data.dtypes
+#organized_data['int_column'] = organized_data['Adjusted Percent of Population Sick'].astype(int)
+#organized_data
